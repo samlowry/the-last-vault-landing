@@ -39,7 +39,7 @@ const Waitlist: React.FC = () => {
   }
 
   return (
-    <section id="waitlist" className="py-20 relative">
+    <section id="waitlist" className="py-10 md:py-20 relative">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <motion.div

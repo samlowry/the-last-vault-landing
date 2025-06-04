@@ -95,7 +95,7 @@ const Features: React.FC = () => {
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="py-20 relative">
+      <section id="how-it-works" className="py-10 md:py-20 relative">
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center mb-16"
@@ -189,7 +189,7 @@ const Features: React.FC = () => {
       </section>
 
       {/* Why It Matters Section */}
-      <section className="py-20 relative">
+      <section className="py-10 md:py-20 relative">
         <div className="container mx-auto px-4">
           <motion.div
             className="max-w-4xl mx-auto text-center"
@@ -235,7 +235,7 @@ const Features: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 relative">
+      <section className="py-10 md:py-20 relative">
         <div className="container mx-auto px-4">
           <motion.div
             className="max-w-4xl mx-auto text-center"
@@ -253,7 +253,7 @@ const Features: React.FC = () => {
                 Preserve your legacy today and ensure that your family always has a way to remember you.
               </p>
               
-              <div className="flex justify-center items-center gap-8 mt-8">
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mt-8">
                 <a
                   href="https://forms.gle/74iAr2SQyfgBTraw9"
                   target="_blank"

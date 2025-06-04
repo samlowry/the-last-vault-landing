@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-8 md:pt-16 overflow-hidden">
+    <section className="relative min-h-[70vh] md:min-h-screen flex items-start md:items-center justify-center pt-8 md:pt-16 overflow-hidden">
       {/* Background Animation */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -144,9 +144,9 @@ const Hero: React.FC = () => {
           {/* Value Proposition */}
           <motion.div
             variants={itemVariants}
-            className="glass-effect p-4 md:p-6 rounded-2xl max-w-full sm:max-w-2xl mx-auto mb-8 md:mb-16"
+            className="glass-effect p-4 md:p-6 rounded-2xl max-w-full sm:max-w-2xl mx-auto mb-0 md:mb-16"
           >
-            <h3 className="text-lg md:text-xl font-semibold text-accent-400 mb-2 md:mb-3">
+            <h3 className="text-lg md:text-xl font-semibold text-white mb-2 md:mb-3">
               Don't let your memories vanish
             </h3>
             <p className="text-text-100 text-sm md:text-base">
@@ -158,7 +158,7 @@ const Hero: React.FC = () => {
           {/* Feature Icons */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-col sm:flex-row justify-center items-center gap-6 md:gap-12"
+            className="flex flex-row justify-center items-center gap-2 md:gap-12 mt-20 md:mt-8 md:mb-8"
           >
             {[
               { icon: Heart, label: "Preserve Memories" },

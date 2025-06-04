@@ -151,7 +151,7 @@ const Security: React.FC = () => {
 
               {/* Floating Elements */}
               <motion.div
-                className="absolute -top-4 -left-4 w-16 h-16 bg-primary-600/10 rounded-full border border-primary-600/30 flex items-center justify-center"
+                className="hidden md:block absolute -top-4 -left-4 w-16 h-16 bg-primary-600/10 rounded-full border border-primary-600/30 flex items-center justify-center"
                 animate={{ 
                   y: [0, -10, 0],
                   rotate: [0, 180, 360]
@@ -166,7 +166,7 @@ const Security: React.FC = () => {
               </motion.div>
 
               <motion.div
-                className="absolute -bottom-4 -right-4 w-20 h-20 bg-primary-500/10 rounded-full border border-primary-500/30 flex items-center justify-center"
+                className="hidden md:block absolute -bottom-4 -right-4 w-20 h-20 bg-primary-500/10 rounded-full border border-primary-500/30 flex items-center justify-center"
                 animate={{ 
                   y: [0, 10, 0],
                   rotate: [360, 180, 0]
@@ -181,7 +181,7 @@ const Security: React.FC = () => {
               </motion.div>
 
               <motion.div
-                className="absolute top-1/2 -right-8 w-12 h-12 bg-primary-400/10 rounded-full border border-primary-400/30 flex items-center justify-center"
+                className="hidden md:block absolute top-1/2 -right-8 w-12 h-12 bg-primary-400/10 rounded-full border border-primary-400/30 flex items-center justify-center"
                 animate={{ 
                   x: [0, 10, 0],
                   scale: [1, 1.2, 1]

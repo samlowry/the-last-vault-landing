@@ -98,7 +98,7 @@ const Hero: React.FC = () => {
             className="inline-flex items-center px-3 py-1.5 md:px-4 md:py-2 rounded-full glass-effect mb-4 md:mb-8 mt-6 md:mt-12"
           >
             <span className="text-xs md:text-sm font-medium text-gray-300">
-              💙 A digital memory for your loved ones
+            🖤 A digital memory for your loved ones
             </span>
           </motion.div>
 
@@ -130,7 +130,7 @@ const Hero: React.FC = () => {
               href="https://forms.gle/74iAr2SQyfgBTraw9"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary text-base md:text-lg px-6 md:px-12 py-3 md:py-5 flex items-center gap-2 mb-4 md:mb-6 w-full max-w-xs md:max-w-none justify-center"
+              className="btn-primary text-base md:text-lg px-6 md:px-12 py-3 md:py-5 flex items-center gap-2 mb-4 md:mb-6 w-full max-w-xs md:max-w-sm justify-center"
             >
               Join the Waitlist Before It's Too Late
               <ArrowRight className="h-5 w-5" />

@@ -51,7 +51,7 @@ const Waitlist: React.FC = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
             {/* Add short date before time, e.g. 25.06.04.17:16:13 */}
-            Time Is Running Out {(() => {
+            Time Is Running Out: {(() => {
               const now = new Date();
               const dd = String(now.getDate()).padStart(2, '0');
               const mm = String(now.getMonth() + 1).padStart(2, '0');

@@ -93,9 +93,9 @@ const Stories: React.FC = () => {
               className="group"
             >
               <div className="glass-effect p-8 rounded-3xl hover:bg-white/10 transition-all duration-500">
-                <div className="flex flex-col md:flex-row gap-6">
+                <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
                   {/* Profile */}
-                  <div className="flex-shrink-0">
+                  <div className="flex-shrink-0 flex flex-col items-center md:items-start">
                     <div className="w-20 h-20 rounded-full bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center text-3xl mb-4">
                       {story.image}
                     </div>

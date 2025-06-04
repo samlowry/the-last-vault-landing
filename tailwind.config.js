@@ -7,12 +7,25 @@ export default {
   theme: {
     extend: {
       colors: {
+        /* Noble sunset palette: deep purple, muted magenta, golden orange, soft beige */
         primary: {
-          50: '#f0f9ff',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-          900: '#1e3a8a',
+          50: '#f8e7ef',      // very light pinkish
+          300: '#d76d77',     // muted magenta (sunset mid)
+          500: '#b0436e',     // noble magenta
+          600: '#8a2c5a',     // deep magenta
+          700: '#3a1c71',     // deep purple (sunset start)
+        },
+        accent: {
+          400: '#ffaf7b',     // golden orange (sunset end)
+          600: '#e07a5f',     // copper accent
+        },
+        background: {
+          900: '#2d193c',     // deep background
+          800: '#3a1c71',     // deep purple
+        },
+        text: {
+          50: '#f8f5f2',      // soft beige
+          100: '#e9e4dd',     // light beige
         },
         dark: {
           50: '#f8fafc',

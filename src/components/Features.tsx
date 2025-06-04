@@ -48,19 +48,19 @@ const Features: React.FC = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-accent-400 to-text-100 bg-clip-text text-transparent">
               What is The Last Vault?
             </h2>
             
             <div className="glass-effect p-8 md:p-12 rounded-3xl">
-              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed mb-8">
-                The Last Vault is like a <span className="text-primary-400 font-semibold">time capsule just for you</span>. 
+              <p className="text-xl md:text-2xl text-text-100 leading-relaxed mb-8">
+                The Last Vault is like a <span className="text-primary-300 font-semibold">time capsule just for you</span>. 
                 While you're alive, it safely collects your messages, pictures, videos, and recordings.
               </p>
               
-              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
+              <p className="text-xl md:text-2xl text-text-100 leading-relaxed">
                 When you're not around anymore, it opens and lets your loved ones 
-                <span className="text-primary-400 font-semibold"> see and hear you again</span>.
+                <span className="text-primary-300 font-semibold"> see and hear you again</span>.
               </p>
               
               {/* Decorative Elements */}
@@ -70,23 +70,23 @@ const Features: React.FC = () => {
                   animate={{ scale: [1, 1.1, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >
-                  <Heart className="h-6 w-6 text-primary-400" />
+                  <Heart className="h-6 w-6 text-primary-300" />
                 </motion.div>
-                <div className="h-px w-12 bg-gradient-to-r from-transparent via-primary-400 to-transparent"></div>
+                <div className="h-px w-12 bg-gradient-to-r from-transparent via-primary-300 to-transparent"></div>
                 <motion.div
                   className="p-3 rounded-full bg-primary-600/20"
                   animate={{ scale: [1, 1.1, 1] }}
                   transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
                 >
-                  <Clock className="h-6 w-6 text-primary-400" />
+                  <Clock className="h-6 w-6 text-primary-300" />
                 </motion.div>
-                <div className="h-px w-12 bg-gradient-to-r from-transparent via-primary-400 to-transparent"></div>
+                <div className="h-px w-12 bg-gradient-to-r from-transparent via-primary-300 to-transparent"></div>
                 <motion.div
                   className="p-3 rounded-full bg-primary-600/20"
                   animate={{ scale: [1, 1.1, 1] }}
                   transition={{ duration: 2, repeat: Infinity, delay: 1 }}
                 >
-                  <Users className="h-6 w-6 text-primary-400" />
+                  <Users className="h-6 w-6 text-primary-300" />
                 </motion.div>
               </div>
             </div>
@@ -104,7 +104,7 @@ const Features: React.FC = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent-400 to-text-100 bg-clip-text text-transparent">
               How It Works
             </h2>
           </motion.div>
@@ -142,7 +142,7 @@ const Features: React.FC = () => {
                     <div className="flex-shrink-0 w-10 h-10 bg-green-600/20 rounded-lg flex items-center justify-center">
                       <item.icon className="h-5 w-5 text-green-400" />
                     </div>
-                    <p className="text-gray-300 leading-relaxed">{item.text}</p>
+                    <p className="text-text-100 leading-relaxed">{item.text}</p>
                   </motion.div>
                 ))}
               </div>
@@ -157,7 +157,7 @@ const Features: React.FC = () => {
               className="glass-effect p-8 rounded-3xl"
             >
               <div className="text-center mb-8">
-                <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary-600/20 text-primary-300 border border-primary-600/30 mb-4">
+                <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary-600/20 text-primary-300 border border-accent-400/30 mb-4">
                   <span className="text-sm font-medium">After You're Gone</span>
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-6">Your Digital Memory</h3>
@@ -177,9 +177,9 @@ const Features: React.FC = () => {
                     viewport={{ once: true }}
                   >
                     <div className="flex-shrink-0 w-10 h-10 bg-primary-600/20 rounded-lg flex items-center justify-center">
-                      <item.icon className="h-5 w-5 text-primary-400" />
+                      <item.icon className="h-5 w-5 text-primary-300" />
                     </div>
-                    <p className="text-gray-300 leading-relaxed">{item.text}</p>
+                    <p className="text-text-100 leading-relaxed">{item.text}</p>
                   </motion.div>
                 ))}
               </div>
@@ -198,15 +198,15 @@ const Features: React.FC = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-accent-400 to-text-100 bg-clip-text text-transparent">
               Why It Matters
             </h2>
             
             <div className="glass-effect p-8 md:p-12 rounded-3xl">
-              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
+              <p className="text-xl md:text-2xl text-text-100 leading-relaxed">
                 Memories can fade. Phones get lost. People forget passwords. 
                 But your vault stays — so your family always has a way to 
-                <span className="text-primary-400 font-semibold"> remember you</span>.
+                <span className="text-primary-300 font-semibold"> remember you</span>.
               </p>
               
               {/* Emotional Icons */}
@@ -223,9 +223,9 @@ const Features: React.FC = () => {
                     whileHover={{ y: -5, scale: 1.05 }}
                   >
                     <div className="p-4 rounded-full bg-primary-600/20">
-                      <item.icon className="h-6 w-6 text-primary-400" />
+                      <item.icon className="h-6 w-6 text-primary-300" />
                     </div>
-                    <span className="text-sm text-gray-400">{item.label}</span>
+                    <span className="text-sm text-text-50">{item.label}</span>
                   </motion.div>
                 ))}
               </div>

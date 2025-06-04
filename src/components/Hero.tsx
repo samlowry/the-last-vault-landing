@@ -105,11 +105,11 @@ const Hero: React.FC = () => {
           {/* Main Heading */}
           <motion.h1
             variants={itemVariants}
-            className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
+            className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-accent-400 to-text-100 bg-clip-text text-transparent"
           >
             Help Your Loved Ones
             <br />
-            <span className="bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary-300 to-primary-600 bg-clip-text text-transparent">{/* sunset magenta gradient */}
               Remember Who You Were
             </span>
           </motion.h1>
@@ -117,7 +117,7 @@ const Hero: React.FC = () => {
           {/* Subtitle */}
           <motion.p
             variants={itemVariants}
-            className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-text-100 mb-12 max-w-3xl mx-auto leading-relaxed"
           >
             A safe place online that keeps your photos, voice, and stories. 
             After you're gone, it turns into a digital memory for your family and friends.
@@ -137,7 +137,7 @@ const Hero: React.FC = () => {
               <ArrowRight className="h-5 w-5" />
             </motion.button>
             
-            <p className="text-sm text-gray-400 max-w-md text-center">
+            <p className="text-sm text-text-50 max-w-md text-center">
               Time doesn't wait. Your stories could disappear forever.
             </p>
           </motion.div>
@@ -147,10 +147,10 @@ const Hero: React.FC = () => {
             variants={itemVariants}
             className="glass-effect p-6 rounded-2xl max-w-2xl mx-auto mb-16"
           >
-            <h3 className="text-xl font-semibold text-white mb-3">
+            <h3 className="text-xl font-semibold text-accent-400 mb-3">
               Don't let your memories vanish
             </h3>
-            <p className="text-gray-300">
+            <p className="text-text-100">
               Every day that passes is another day your stories risk being lost forever. 
               Secure your spot now while you still can.
             </p>
@@ -172,9 +172,9 @@ const Hero: React.FC = () => {
                 whileHover={{ y: -5 }}
               >
                 <div className="p-3 rounded-full glass-effect">
-                  <feature.icon className="h-6 w-6 text-primary-400" />
+                  <feature.icon className="h-6 w-6 text-primary-300" />
                 </div>
-                <span className="text-sm text-gray-400 hidden md:block">
+                <span className="text-sm text-text-50 hidden md:block">
                   {feature.label}
                 </span>
               </motion.div>
@@ -189,8 +189,8 @@ const Hero: React.FC = () => {
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/50 rounded-full mt-2"></div>
+        <div className="w-6 h-10 border-2 border-accent-400/30 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-accent-400/50 rounded-full mt-2"></div>
         </div>
       </motion.div>
     </section>

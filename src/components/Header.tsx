@@ -45,13 +45,14 @@ const Header: React.FC = () => {
           </nav>
 
           {/* CTA Button */}
-          <motion.button 
+          <a
+            href="https://forms.gle/74iAr2SQyfgBTraw9"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:block btn-primary"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
           >
             Join Waitlist
-          </motion.button>
+          </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -80,9 +81,14 @@ const Header: React.FC = () => {
                 {item.label}
               </a>
             ))}
-            <button className="btn-primary w-full mt-4">
+            <a
+              href="https://forms.gle/74iAr2SQyfgBTraw9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary w-full mt-4"
+            >
               Join Waitlist
-            </button>
+            </a>
           </motion.div>
         )}
       </div>

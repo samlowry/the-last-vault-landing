@@ -152,20 +152,22 @@ const Stories: React.FC = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
-                className="btn-primary px-8 py-4 text-lg"
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
+              <a
+                href="https://forms.gle/74iAr2SQyfgBTraw9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary px-8 py-4 text-lg flex items-center justify-center gap-2 whitespace-nowrap"
               >
                 Preserve Your Legacy Now
-              </motion.button>
-              <motion.button
-                className="btn-secondary px-8 py-4 text-lg border-red-400/50 text-red-300 hover:border-red-400"
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
+              </a>
+              <a
+                href="https://forms.gle/74iAr2SQyfgBTraw9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary px-8 py-4 text-lg border-red-400/50 text-red-300 hover:border-red-400 flex items-center justify-center gap-2 whitespace-nowrap"
               >
                 Don't Wait Until It's Too Late
-              </motion.button>
+              </a>
             </div>
           </div>
         </motion.div>

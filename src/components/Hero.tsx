@@ -126,14 +126,15 @@ const Hero: React.FC = () => {
             variants={itemVariants}
             className="flex flex-col items-center justify-center mb-16"
           >
-            <motion.button
+            <a
+              href="https://forms.gle/74iAr2SQyfgBTraw9"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary text-lg px-12 py-5 flex items-center gap-2 mb-6"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
             >
               Join the Waitlist Before It's Too Late
               <ArrowRight className="h-5 w-5" />
-            </motion.button>
+            </a>
             
             <p className="text-sm text-text-50 max-w-md text-center">
               Time doesn't wait. Your stories could disappear forever.

@@ -233,6 +233,48 @@ const Features: React.FC = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* CTA Section */}
+      <section className="py-20 relative">
+        <div className="container mx-auto px-4">
+          <motion.div
+            className="max-w-4xl mx-auto text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-accent-400 to-text-100 bg-clip-text text-transparent">
+              Take Action Today
+            </h2>
+            
+            <div className="glass-effect p-8 md:p-12 rounded-3xl">
+              <p className="text-xl md:text-2xl text-text-100 leading-relaxed">
+                Preserve your legacy today and ensure that your family always has a way to remember you.
+              </p>
+              
+              <div className="flex justify-center items-center gap-8 mt-8">
+                <a
+                  href="https://forms.gle/74iAr2SQyfgBTraw9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary px-8 py-4 text-lg flex items-center justify-center gap-2 whitespace-nowrap"
+                >
+                  Preserve Your Legacy Now
+                </a>
+                <a
+                  href="https://forms.gle/74iAr2SQyfgBTraw9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-secondary px-8 py-4 text-lg border-red-400/50 text-red-300 hover:border-red-400 flex items-center justify-center gap-2 whitespace-nowrap"
+                >
+                  Don't Wait Until It's Too Late
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
     </>
   )
 }

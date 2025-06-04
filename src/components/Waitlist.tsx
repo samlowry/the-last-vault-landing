@@ -65,7 +65,6 @@ const Waitlist: React.FC = () => {
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
-          {/* Main Waitlist Card */}
           <motion.div
             className="glass-effect p-8 md:p-12 rounded-3xl mb-12 text-center"
             initial={{ opacity: 0, y: 30 }}
@@ -77,7 +76,6 @@ const Waitlist: React.FC = () => {
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/20 text-white border border-white/40 mb-6">
                 <span className="text-sm font-medium">🌑 Memories Fade. Legacy Doesn't Have To.</span>
               </div>
-              
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 Save Your Place Before It's Gone
               </h3>
@@ -85,40 +83,15 @@ const Waitlist: React.FC = () => {
                 Every day, memories are lost forever. Join the waitlist now and make sure your story survives you.
               </p>
             </div>
-
-            {/* Email Signup Form */}
-            <form onSubmit={handleSubmit} className="max-w-md mx-auto mb-4">
-              <div className="flex flex-col sm:flex-row gap-4">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email address"
-                  className="flex-1 px-4 py-4 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary-500 transition-colors duration-200"
-                  required
-                />
-                <motion.button
-                  type="submit"
-                  className="btn-primary px-8 py-4 flex items-center justify-center gap-2 whitespace-nowrap"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  disabled={isSubmitted}
-                >
-                  {isSubmitted ? (
-                    <>
-                      <Heart className="h-5 w-5" />
-                      Added!
-                    </>
-                  ) : (
-                    <>
-                      Join Waitlist Before It's Too Late
-                      <ArrowRight className="h-5 w-5" />
-                    </>
-                  )}
-                </motion.button>
-              </div>
-            </form>
-            <p className="text-sm text-gray-400 max-w-md mx-auto">
+            <a
+              href="https://forms.gle/74iAr2SQyfgBTraw9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary px-8 py-4 text-lg inline-block mx-auto"
+            >
+              Join the Waitlist Before It's Too Late
+            </a>
+            <p className="text-sm text-gray-400 max-w-md mx-auto mt-6">
               This is your only chance to make sure your memories are not lost to time.
             </p>
           </motion.div>

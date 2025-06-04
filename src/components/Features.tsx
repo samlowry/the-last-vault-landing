@@ -11,8 +11,11 @@ import {
   MessageCircle,
   Shield
 } from 'lucide-react'
+import { useTranslation } from '../i18n/context'
 
 const Features: React.FC = () => {
+  const { t } = useTranslation()
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -49,18 +52,16 @@ const Features: React.FC = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-accent-400 to-text-100 bg-clip-text text-transparent">
-              What is The Last Vault?
+              {t.features.whatIsTitle}
             </h2>
             
             <div className="glass-effect p-8 md:p-12 rounded-3xl">
               <p className="text-xl md:text-2xl text-text-100 leading-relaxed mb-8">
-                The Last Vault is like a <span className="text-text-50 font-semibold">time capsule just for you</span>. 
-                While you're alive, it safely collects your messages, pictures, videos, and recordings.
+                {t.features.whatIsDescription1}
               </p>
               
               <p className="text-xl md:text-2xl text-text-100 leading-relaxed">
-                When you're not around anymore, it opens and lets your loved ones 
-                <span className="text-text-50 font-semibold"> see and hear you again</span>.
+                {t.features.whatIsDescription2}
               </p>
               
               {/* Decorative Elements */}
@@ -105,7 +106,7 @@ const Features: React.FC = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent-400 to-text-100 bg-clip-text text-transparent">
-              How It Works
+              {t.features.howItWorksTitle}
             </h2>
           </motion.div>
 
@@ -120,17 +121,13 @@ const Features: React.FC = () => {
             >
               <div className="text-center mb-8">
                 <div className="inline-flex items-center px-4 py-2 rounded-full bg-green-600/20 text-green-300 border border-green-600/30 mb-4">
-                  <span className="text-sm font-medium">🥳 While You're Alive</span>
+                  <span className="text-sm font-medium">{t.features.whileAlive.badge}</span>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-6">Building Your Legacy</h3>
+                <h3 className="text-2xl font-bold text-white mb-6">{t.features.whileAlive.title}</h3>
               </div>
 
               <div className="space-y-6">
-                {[
-                  { icon: Upload, text: "You upload your photos, videos, voice notes, or texts" },
-                  { icon: Lock, text: "Everything is locked and safely stored online in a special way" },
-                  { icon: Users, text: "You choose how it will open later (a tap, a time, or by people you trust)" }
-                ].map((item, index) => (
+                {t.features.whileAlive.items.map((item, index) => (
                   <motion.div
                     key={index}
                     className="flex items-start gap-4"
@@ -140,9 +137,11 @@ const Features: React.FC = () => {
                     viewport={{ once: true }}
                   >
                     <div className="flex-shrink-0 w-10 h-10 bg-green-600/20 rounded-lg flex items-center justify-center">
-                      <item.icon className="h-5 w-5 text-text-50" />
+                      {index === 0 && <Upload className="h-5 w-5 text-text-50" />}
+                      {index === 1 && <Lock className="h-5 w-5 text-text-50" />}
+                      {index === 2 && <Users className="h-5 w-5 text-text-50" />}
                     </div>
-                    <p className="text-text-100 leading-relaxed">{item.text}</p>
+                    <p className="text-text-100 leading-relaxed">{item}</p>
                   </motion.div>
                 ))}
               </div>
@@ -158,16 +157,13 @@ const Features: React.FC = () => {
             >
               <div className="text-center mb-8">
                 <div className="inline-flex items-center px-4 py-2 rounded-full bg-red-600/20 text-red-300 border border-red-600/30 mb-4">
-                  <span className="text-sm font-medium">🥀 After You're Gone</span>
+                  <span className="text-sm font-medium">{t.features.afterGone.badge}</span>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-6">Your Digital Memory</h3>
+                <h3 className="text-2xl font-bold text-white mb-6">{t.features.afterGone.title}</h3>
               </div>
 
               <div className="space-y-6">
-                {[
-                  { icon: Clock, text: "The vault opens only when the rules you picked are followed" },
-                  { icon: MessageCircle, text: "An AI version of you can talk to your family, using your own voice and words" }
-                ].map((item, index) => (
+                {t.features.afterGone.items.map((item, index) => (
                   <motion.div
                     key={index}
                     className="flex items-start gap-4"
@@ -177,9 +173,10 @@ const Features: React.FC = () => {
                     viewport={{ once: true }}
                   >
                     <div className="flex-shrink-0 w-10 h-10 bg-primary-600/20 rounded-lg flex items-center justify-center">
-                      <item.icon className="h-5 w-5 text-text-50" />
+                      {index === 0 && <Clock className="h-5 w-5 text-text-50" />}
+                      {index === 1 && <MessageCircle className="h-5 w-5 text-text-50" />}
                     </div>
-                    <p className="text-text-100 leading-relaxed">{item.text}</p>
+                    <p className="text-text-100 leading-relaxed">{item}</p>
                   </motion.div>
                 ))}
               </div>
@@ -199,23 +196,21 @@ const Features: React.FC = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-accent-400 to-text-100 bg-clip-text text-transparent">
-              Why It Matters
+              {t.features.whyMattersTitle}
             </h2>
             
             <div className="glass-effect p-8 md:p-12 rounded-3xl">
               <p className="text-xl md:text-2xl text-text-100 leading-relaxed">
-                Memories can fade. Phones get lost. People forget passwords. 
-                But your vault stays — so your family always has a way to 
-                <span className="text-white font-semibold" style={{textShadow: '0 1px 8px rgba(0,0,0,0.5)'}}> remember you</span>.
+                {t.features.whyMattersDescription}
               </p>
               
               {/* Emotional Icons */}
               <div className="flex justify-center items-center gap-8 mt-8">
                 {[
-                  { icon: Camera, label: "Photos" },
-                  { icon: Upload, label: "Videos" },
-                  { icon: Mic, label: "Voice" },
-                  { icon: Heart, label: "Memories" }
+                  { icon: Camera, label: t.features.mediaLabels.photos },
+                  { icon: Upload, label: t.features.mediaLabels.videos },
+                  { icon: Mic, label: t.features.mediaLabels.voice },
+                  { icon: Heart, label: t.features.mediaLabels.memories }
                 ].map((item, index) => (
                   <motion.div
                     key={index}
@@ -245,12 +240,12 @@ const Features: React.FC = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-accent-400 to-text-100 bg-clip-text text-transparent">
-              Take Action Today
+              {t.features.takeActionTitle}
             </h2>
             
             <div className="glass-effect p-8 md:p-12 rounded-3xl">
               <p className="text-xl md:text-2xl text-text-100 leading-relaxed">
-                Preserve your legacy today and ensure that your family always has a way to remember you.
+                {t.features.takeActionDescription}
               </p>
               
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mt-8">
@@ -260,7 +255,7 @@ const Features: React.FC = () => {
                   rel="noopener noreferrer"
                   className="btn-primary px-8 py-4 text-lg flex items-center justify-center gap-2 whitespace-nowrap"
                 >
-                  Preserve Your Legacy Now
+                  {t.features.ctaButtons.preserveLegacy}
                 </a>
                 <a
                   href="https://forms.gle/74iAr2SQyfgBTraw9"
@@ -268,7 +263,7 @@ const Features: React.FC = () => {
                   rel="noopener noreferrer"
                   className="btn-secondary px-8 py-4 text-lg border-red-400/50 text-red-300 hover:border-red-400 flex items-center justify-center gap-2 whitespace-nowrap"
                 >
-                  Don't Wait Until It's Too Late
+                  {t.features.ctaButtons.dontWait}
                 </a>
               </div>
             </div>

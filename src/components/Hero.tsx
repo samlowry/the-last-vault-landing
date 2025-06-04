@@ -1,8 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight, Heart, Clock, Users } from 'lucide-react'
+import { useTranslation } from '../i18n/context'
 
 const Hero: React.FC = () => {
+  const { t } = useTranslation()
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -98,7 +101,7 @@ const Hero: React.FC = () => {
             className="inline-flex items-center px-3 py-1.5 md:px-4 md:py-2 rounded-full glass-effect mb-4 md:mb-8 mt-6 md:mt-12"
           >
             <span className="text-xs md:text-sm font-medium text-gray-300">
-            🖤 A digital memory for your loved ones
+              {t.hero.badge}
             </span>
           </motion.div>
 
@@ -107,9 +110,9 @@ const Hero: React.FC = () => {
             variants={itemVariants}
             className="text-3xl sm:text-4xl md:text-7xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-accent-400 to-text-100 bg-clip-text text-transparent"
           >
-            Help Your Loved Ones
+            {t.hero.title}
             <br />
-            <span className="text-text-50 font-semibold text-2xl sm:text-3xl md:text-5xl">Remember Who You Were</span>
+            <span className="text-text-50 font-semibold text-2xl sm:text-3xl md:text-5xl">{t.hero.subtitle}</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -117,8 +120,7 @@ const Hero: React.FC = () => {
             variants={itemVariants}
             className="text-base sm:text-xl md:text-2xl text-text-100 mb-8 md:mb-12 max-w-full sm:max-w-3xl mx-auto leading-relaxed"
           >
-            A safe place online that keeps your photos, voice, and stories. 
-            After you're gone, it turns into a digital memory for your family and friends.
+            {t.hero.description}
           </motion.p>
 
           {/* CTA Buttons */}
@@ -132,12 +134,12 @@ const Hero: React.FC = () => {
               rel="noopener noreferrer"
               className="btn-primary text-base md:text-lg px-6 md:px-12 py-3 md:py-5 flex items-center gap-2 mb-4 md:mb-6 w-full max-w-xs md:max-w-sm justify-center"
             >
-              Join the Waitlist Before It's Too Late
+              {t.hero.ctaButton}
               <ArrowRight className="h-5 w-5" />
             </a>
             
             <p className="text-xs md:text-sm text-text-50 max-w-xs md:max-w-md text-center">
-              Time doesn't wait. Your stories could disappear forever.
+              {t.hero.ctaSubtext}
             </p>
           </motion.div>
 
@@ -147,11 +149,10 @@ const Hero: React.FC = () => {
             className="glass-effect p-4 md:p-6 rounded-2xl max-w-full sm:max-w-2xl mx-auto mb-0 md:mb-16"
           >
             <h3 className="text-lg md:text-xl font-semibold text-white mb-2 md:mb-3">
-              Don't let your memories vanish
+              {t.hero.valueProposition.title}
             </h3>
             <p className="text-text-100 text-sm md:text-base">
-              Every day that passes is another day your stories risk being lost forever. 
-              Secure your spot now while you still can.
+              {t.hero.valueProposition.description}
             </p>
           </motion.div>
 
@@ -161,9 +162,9 @@ const Hero: React.FC = () => {
             className="flex flex-row justify-center items-center gap-2 md:gap-12 mt-20 md:mt-8 md:mb-8"
           >
             {[
-              { icon: Heart, label: "Preserve Memories" },
-              { icon: Clock, label: "Digital Time Capsule" },
-              { icon: Users, label: "For Your Family" }
+              { icon: Heart, label: t.hero.features.preserveMemories },
+              { icon: Clock, label: t.hero.features.digitalTimeCapsule },
+              { icon: Users, label: t.hero.features.forYourFamily }
             ].map((feature, index) => (
               <motion.div
                 key={index}

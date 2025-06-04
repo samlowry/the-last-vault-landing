@@ -1,15 +1,18 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Heart, Menu, X } from 'lucide-react'
+import { useTranslation } from '../i18n/context'
+import LanguageSwitcher from './LanguageSwitcher'
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { t } = useTranslation()
 
   const navItems = [
-    { href: '#how-it-works', label: 'How It Works' },
-    { href: '#security', label: 'Security' },
-    { href: '#waitlist', label: 'Waitlist' },
-    { href: '#contact', label: 'Contact' }
+    { href: '#how-it-works', label: t.nav.howItWorks },
+    { href: '#security', label: t.nav.security },
+    { href: '#waitlist', label: t.nav.waitlist },
+    { href: '#contact', label: t.nav.contact }
   ]
 
   return (
@@ -44,23 +47,29 @@ const Header: React.FC = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <a
-            href="https://forms.gle/74iAr2SQyfgBTraw9"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:block btn-primary"
-          >
-            Join Waitlist
-          </a>
+          {/* Desktop Controls */}
+          <div className="hidden md:flex items-center space-x-4">
+            <LanguageSwitcher />
+            <a
+              href="https://forms.gle/74iAr2SQyfgBTraw9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              {t.common.joinWaitlist}
+            </a>
+          </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-white"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          <div className="md:hidden flex items-center space-x-2">
+            <LanguageSwitcher />
+            <button
+              className="text-white"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -87,7 +96,7 @@ const Header: React.FC = () => {
               rel="noopener noreferrer"
               className="btn-primary w-full mt-4"
             >
-              Join Waitlist
+              {t.common.joinWaitlist}
             </a>
           </motion.div>
         )}

@@ -56,11 +56,11 @@ const Hero: React.FC = () => {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-8 md:pt-16 overflow-hidden">
       {/* Background Animation */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary-600/20 rounded-full blur-3xl"
+          className="absolute top-1/4 left-1/4 w-40 h-40 md:w-64 md:h-64 bg-primary-600/20 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.3, 0.6, 0.3]
@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
           }}
         />
         <motion.div
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl"
+          className="absolute bottom-1/4 right-1/4 w-56 h-56 md:w-96 md:h-96 bg-primary-500/10 rounded-full blur-3xl"
           animate={{
             scale: [1.2, 1, 1.2],
             opacity: [0.2, 0.4, 0.2]
@@ -85,9 +85,9 @@ const Hero: React.FC = () => {
         />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-2 sm:px-4 relative z-10">
         <motion.div
-          className="text-center max-w-4xl mx-auto"
+          className="text-center max-w-full sm:max-w-4xl mx-auto"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -95,9 +95,9 @@ const Hero: React.FC = () => {
           {/* Badge */}
           <motion.div
             variants={itemVariants}
-            className="inline-flex items-center px-4 py-2 rounded-full glass-effect mb-8 mt-12"
+            className="inline-flex items-center px-3 py-1.5 md:px-4 md:py-2 rounded-full glass-effect mb-4 md:mb-8 mt-6 md:mt-12"
           >
-            <span className="text-sm font-medium text-gray-300">
+            <span className="text-xs md:text-sm font-medium text-gray-300">
               💙 A digital memory for your loved ones
             </span>
           </motion.div>
@@ -105,17 +105,17 @@ const Hero: React.FC = () => {
           {/* Main Heading */}
           <motion.h1
             variants={itemVariants}
-            className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-accent-400 to-text-100 bg-clip-text text-transparent"
+            className="text-3xl sm:text-4xl md:text-7xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-accent-400 to-text-100 bg-clip-text text-transparent"
           >
             Help Your Loved Ones
             <br />
-            <span className="text-text-50 font-semibold">Remember Who You Were</span>
+            <span className="text-text-50 font-semibold text-2xl sm:text-3xl md:text-5xl">Remember Who You Were</span>
           </motion.h1>
 
           {/* Subtitle */}
           <motion.p
             variants={itemVariants}
-            className="text-xl md:text-2xl text-text-100 mb-12 max-w-3xl mx-auto leading-relaxed"
+            className="text-base sm:text-xl md:text-2xl text-text-100 mb-8 md:mb-12 max-w-full sm:max-w-3xl mx-auto leading-relaxed"
           >
             A safe place online that keeps your photos, voice, and stories. 
             After you're gone, it turns into a digital memory for your family and friends.
@@ -124,19 +124,19 @@ const Hero: React.FC = () => {
           {/* CTA Buttons */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-col items-center justify-center mb-16"
+            className="flex flex-col items-center justify-center mb-8 md:mb-16 w-full"
           >
             <a
               href="https://forms.gle/74iAr2SQyfgBTraw9"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary text-lg px-12 py-5 flex items-center gap-2 mb-6"
+              className="btn-primary text-base md:text-lg px-6 md:px-12 py-3 md:py-5 flex items-center gap-2 mb-4 md:mb-6 w-full max-w-xs md:max-w-none justify-center"
             >
               Join the Waitlist Before It's Too Late
               <ArrowRight className="h-5 w-5" />
             </a>
             
-            <p className="text-sm text-text-50 max-w-md text-center">
+            <p className="text-xs md:text-sm text-text-50 max-w-xs md:max-w-md text-center">
               Time doesn't wait. Your stories could disappear forever.
             </p>
           </motion.div>
@@ -144,12 +144,12 @@ const Hero: React.FC = () => {
           {/* Value Proposition */}
           <motion.div
             variants={itemVariants}
-            className="glass-effect p-6 rounded-2xl max-w-2xl mx-auto mb-16"
+            className="glass-effect p-4 md:p-6 rounded-2xl max-w-full sm:max-w-2xl mx-auto mb-8 md:mb-16"
           >
-            <h3 className="text-xl font-semibold text-accent-400 mb-3">
+            <h3 className="text-lg md:text-xl font-semibold text-accent-400 mb-2 md:mb-3">
               Don't let your memories vanish
             </h3>
-            <p className="text-text-100">
+            <p className="text-text-100 text-sm md:text-base">
               Every day that passes is another day your stories risk being lost forever. 
               Secure your spot now while you still can.
             </p>
@@ -158,7 +158,7 @@ const Hero: React.FC = () => {
           {/* Feature Icons */}
           <motion.div
             variants={itemVariants}
-            className="flex justify-center items-center gap-8 md:gap-12"
+            className="flex flex-col sm:flex-row justify-center items-center gap-6 md:gap-12"
           >
             {[
               { icon: Heart, label: "Preserve Memories" },
@@ -167,13 +167,13 @@ const Hero: React.FC = () => {
             ].map((feature, index) => (
               <motion.div
                 key={index}
-                className="flex flex-col items-center gap-2"
+                className="flex flex-col items-center gap-1 md:gap-2"
                 whileHover={{ y: -5 }}
               >
-                <div className="p-3 rounded-full glass-effect">
-                  <feature.icon className="h-6 w-6 text-text-50" />
+                <div className="p-2 md:p-3 rounded-full glass-effect">
+                  <feature.icon className="h-5 w-5 md:h-6 md:w-6 text-text-50" />
                 </div>
-                <span className="text-sm text-text-50 hidden md:block">
+                <span className="text-xs md:text-sm text-text-50 hidden sm:block">
                   {feature.label}
                 </span>
               </motion.div>
@@ -184,12 +184,12 @@ const Hero: React.FC = () => {
 
       {/* Scroll Indicator */}
       <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2"
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        <div className="w-6 h-10 border-2 border-accent-400/30 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-accent-400/50 rounded-full mt-2"></div>
+        <div className="w-5 h-8 md:w-6 md:h-10 border-2 border-accent-400/30 rounded-full flex justify-center">
+          <div className="w-1 h-2 md:h-3 bg-accent-400/50 rounded-full mt-1.5 md:mt-2"></div>
         </div>
       </motion.div>
     </section>

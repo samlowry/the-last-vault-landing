@@ -132,13 +132,21 @@
   "waitlist": {
     "badge": "🌑 Erinnerungen verblassen. Das Vermächtnis bleibt.",
     "title": "Die Zeit läuft ab:",
-    "subtitle": "Melden Sie sich an, um Ihre Erinnerungen zu retten, bevor sie verschwinden. Es gibt keine zweite Chance, Ihre Geschichte für die zu bewahren, die Sie lieben.",
+    "subtitle": "Tragen Sie sich in die Warteliste ein, um Ihre Erinnerungen zu retten, bevor sie verschwinden. Es wird keine zweite Chance geben, Ihre Geschichte für die zu bewahren, die Sie lieben.",
     "ctaTitle": "Sichern Sie sich Ihren Platz, bevor er weg ist",
-    "description": "Jeden Tag gehen Erinnerungen unwiederbringlich verloren. Melden Sie sich jetzt an und sorgen Sie dafür, dass Ihre Geschichte Sie überlebt.",
+    "description": "Jeden Tag gehen Erinnerungen für immer verloren. Tragen Sie sich jetzt ein und stellen Sie sicher, dass Ihre Geschichte Sie überlebt.",
     "ctaButton": "Zur Warteliste anmelden",
-    "disclaimer": "Das ist Ihre einzige Chance sicherzustellen, dass Ihre Erinnerungen nicht in der Zeit verloren gehen."
+    "disclaimer": "Dies ist Ihre einzige Chance sicherzustellen, dass Ihre Erinnerungen nicht in der Zeit verloren gehen.",
+    "urgencyCards": [
+      "Verlieren Sie keine wertvollen Erinnerungen",
+      "Die Zeit läuft ab",
+      "Handeln Sie, bevor es zu spät ist"
+    ]
   },
   "footer": {
+    "description": "Ein sicheres digitales Heiligtum für Ihre Erinnerungen, Geschichten und Ihr Vermächtnis. Wir stellen sicher, dass sich Ihre Liebsten immer daran erinnern können, wer Sie waren.",
+    "quickLinks": "Schnelle Links",
+    "contact": "Kontakt",
     "copyright": "The Last Vault. Alle Rechte vorbehalten.",
     "socialLabels": {
       "email": "E-Mail",

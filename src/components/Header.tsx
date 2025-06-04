@@ -22,15 +22,17 @@ const Header: React.FC = () => {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="fixed top-0 left-0 right-0 z-50 glass-effect"
     >
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+      <div className="container mx-auto px-3 sm:px-4">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Logo */}
           <motion.div 
-            className="flex items-center space-x-2"
+            className="flex items-center space-x-1 sm:space-x-2 min-w-0"
             whileHover={{ scale: 1.05 }}
           >
-            <Heart className="h-8 w-8 text-primary-500" />
-            <span className="text-xl font-bold text-white">The Last Vault</span>
+            <Heart className="h-5 w-5 sm:h-6 sm:w-6 md:h-8 md:w-8 text-primary-500 flex-shrink-0" />
+            <span className="text-sm sm:text-lg md:text-xl font-bold text-white whitespace-nowrap">
+              The Last Vault
+            </span>
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -60,14 +62,16 @@ const Header: React.FC = () => {
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-2">
-            <LanguageSwitcher />
+          {/* Mobile Controls */}
+          <div className="md:hidden flex items-center min-w-0 flex-shrink-0 space-x-1">
+            <div className="scale-90">
+              <LanguageSwitcher />
+            </div>
             <button
-              className="text-white"
+              className="text-white p-1"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
           </div>
         </div>

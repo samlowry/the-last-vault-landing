@@ -136,9 +136,17 @@
     "ctaTitle": "Save Your Place Before It's Gone",
     "description": "Every day, memories are lost forever. Join the waitlist now and make sure your story survives you.",
     "ctaButton": "Join the Waitlist Before It's Too Late",
-    "disclaimer": "This is your only chance to make sure your memories are not lost to time."
+    "disclaimer": "This is your only chance to make sure your memories are not lost to time.",
+    "urgencyCards": [
+      "Don't lose precious memories",
+      "Time is running out",
+      "Act before it's too late"
+    ]
   },
   "footer": {
+    "description": "A secure digital sanctuary for your memories, stories, and legacy. Ensuring your loved ones can always remember who you were.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
     "copyright": "The Last Vault. All rights reserved.",
     "socialLabels": {
       "email": "E-mail",

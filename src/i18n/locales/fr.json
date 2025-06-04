@@ -136,9 +136,17 @@
     "ctaTitle": "Réservez votre place avant qu'elle ne disparaisse",
     "description": "Chaque jour, des souvenirs sont perdus à jamais. Inscrivez-vous maintenant et garantissez que votre histoire vous survive.",
     "ctaButton": "S'inscrire sur la liste d'attente",
-    "disclaimer": "C'est votre seule chance de vous assurer que vos souvenirs ne se perdent pas dans le temps."
+    "disclaimer": "C'est votre seule chance de vous assurer que vos souvenirs ne se perdent pas dans le temps.",
+    "urgencyCards": [
+      "Ne perdez pas de précieux souvenirs",
+      "Le temps presse",
+      "Agissez avant qu'il ne soit trop tard"
+    ]
   },
   "footer": {
+    "description": "Un sanctuaire numérique sécurisé pour vos souvenirs, histoires et héritage. Nous nous assurons que vos proches puissent toujours se souvenir de qui vous étiez.",
+    "quickLinks": "Liens rapides",
+    "contact": "Contact",
     "copyright": "The Last Vault. Tous droits réservés.",
     "socialLabels": {
       "email": "E-mail",

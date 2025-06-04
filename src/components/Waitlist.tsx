@@ -139,9 +139,9 @@ const Waitlist: React.FC = () => {
             viewport={{ once: true }}
           >
             {[
-              { icon: Heart, text: "Don't lose precious memories" },
-              { icon: Clock, text: "Time is running out" },
-              { icon: ArrowRight, text: "Act before it's too late" }
+              { icon: Heart, text: t.waitlist.urgencyCards[0] },
+              { icon: Clock, text: t.waitlist.urgencyCards[1] },
+              { icon: ArrowRight, text: t.waitlist.urgencyCards[2] }
             ].map((item, index) => (
               <motion.div
                 key={index}

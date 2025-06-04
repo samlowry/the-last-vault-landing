@@ -60,8 +60,7 @@ const Footer: React.FC = () => {
               <span className="text-2xl font-bold text-white">The Last Vault</span>
             </div>
             <p className="text-gray-300 leading-relaxed max-w-md">
-              A secure digital sanctuary for your memories, stories, and legacy. 
-              Ensuring your loved ones can always remember who you were.
+              {t.footer.description}
             </p>
           </motion.div>
 
@@ -72,7 +71,7 @@ const Footer: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">{t.footer.quickLinks}</h3>
             <ul className="space-y-3">
               {[
                 { href: '#how-it-works', label: t.nav.howItWorks },
@@ -98,7 +97,7 @@ const Footer: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">{t.footer.contact}</h3>
             <div className="space-y-3">
               <a
                 href="mailto:hello@thelastvault.com"

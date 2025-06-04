@@ -104,10 +104,14 @@ export interface Translation {
     description: string
     ctaButton: string
     disclaimer: string
+    urgencyCards: string[]
   }
   
   // Footer
   footer: {
+    description: string
+    quickLinks: string
+    contact: string
     copyright: string
     socialLabels: {
       email: string

@@ -97,25 +97,20 @@ const Hero: React.FC = () => {
           {/* CTA Buttons */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
+            className="flex flex-col items-center justify-center mb-16"
           >
             <motion.button
-              className="btn-primary text-lg px-8 py-4 flex items-center gap-2"
+              className="btn-primary text-lg px-12 py-5 flex items-center gap-2 mb-6"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
-              Join the Waitlist
+              Join the Waitlist Before It's Too Late
               <ArrowRight className="h-5 w-5" />
             </motion.button>
             
-            <motion.button
-              className="btn-secondary text-lg px-8 py-4 flex items-center gap-2"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Users className="h-5 w-5" />
-              Invite Friends → Get Earlier Access
-            </motion.button>
+            <p className="text-sm text-gray-400 max-w-md text-center">
+              Time doesn't wait. Your stories could disappear forever.
+            </p>
           </motion.div>
 
           {/* Value Proposition */}
@@ -124,10 +119,11 @@ const Hero: React.FC = () => {
             className="glass-effect p-6 rounded-2xl max-w-2xl mx-auto mb-16"
           >
             <h3 className="text-xl font-semibold text-white mb-3">
-              Be one of the first to save your memories
+              Don't let your memories vanish
             </h3>
             <p className="text-gray-300">
-              Sign up now to save your spot. You can invite people you trust to help open it later.
+              Every day that passes is another day your stories risk being lost forever. 
+              Secure your spot now while you still can.
             </p>
           </motion.div>
 

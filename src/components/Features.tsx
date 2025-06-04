@@ -205,7 +205,7 @@ const Features: React.FC = () => {
               </p>
               
               {/* Emotional Icons */}
-              <div className="flex justify-center items-center gap-8 mt-8">
+              <div className="flex justify-between items-center mt-8 max-w-lg mx-auto">
                 {[
                   { icon: Camera, label: t.features.mediaLabels.photos },
                   { icon: Upload, label: t.features.mediaLabels.videos },
@@ -214,13 +214,13 @@ const Features: React.FC = () => {
                 ].map((item, index) => (
                   <motion.div
                     key={index}
-                    className="flex flex-col items-center gap-2"
+                    className="flex flex-col items-center gap-2 flex-1"
                     whileHover={{ y: -5, scale: 1.05 }}
                   >
                     <div className="p-4 rounded-full bg-primary-600/20">
                       <item.icon className="h-6 w-6 text-text-50" />
                     </div>
-                    <span className="text-sm text-text-50">{item.label}</span>
+                    <span className="text-sm text-text-50 text-center">{item.label}</span>
                   </motion.div>
                 ))}
               </div>

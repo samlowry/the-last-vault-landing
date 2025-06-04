@@ -34,7 +34,7 @@ const LanguageSwitcher: React.FC = () => {
           <>
             {/* Backdrop */}
             <div 
-              className="fixed inset-0 z-40"
+              className="fixed inset-0 z-[100]"
               onClick={() => setIsOpen(false)}
             />
             
@@ -43,7 +43,7 @@ const LanguageSwitcher: React.FC = () => {
               initial={{ opacity: 0, y: -10, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -10, scale: 0.95 }}
-              className="absolute top-full right-0 mt-2 w-48 glass-effect rounded-lg border border-white/10 shadow-xl z-50 max-h-64 overflow-y-auto"
+              className="absolute top-full right-0 mt-2 w-48 glass-effect rounded-lg border border-white/10 shadow-xl z-[110] max-h-64 overflow-y-auto"
             >
               {languages.map((lang) => (
                 <motion.button

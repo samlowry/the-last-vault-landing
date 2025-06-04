@@ -124,7 +124,7 @@ export interface Translation {
   }
 }
 
-export type Language = 'en' | 'ru' | 'zh' | 'es' | 'de' | 'fr' | 'ja' | 'ar'
+export type Language = 'en' | 'ru' | 'es' | 'de' | 'fr'
 
 export interface LanguageInfo {
   code: Language

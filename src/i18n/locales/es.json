@@ -1,154 +1,154 @@
 {
   "nav": {
-    "howItWorks": "Cómo Funciona",
+    "howItWorks": "Cómo funciona",
     "security": "Seguridad",
-    "waitlist": "Lista de Espera",
+    "waitlist": "Lista de espera",
     "contact": "Contacto"
   },
   "hero": {
-    "badge": "🖤 Una memoria digital para tus seres queridos",
-    "title": "Ayuda a tus Seres Queridos",
-    "subtitle": "Recordar Quién Fuiste",
-    "description": "Un lugar seguro en línea que guarda tus fotos, voz e historias. Después de que te vayas, se convierte en una memoria digital para tu familia y amigos.",
-    "ctaButton": "Únete a la Lista de Espera Antes de que Sea Demasiado Tarde",
-    "ctaSubtext": "El tiempo no espera. Tus historias podrían desaparecer para siempre.",
+    "badge": "🖤 Memoria digital para tus seres queridos",
+    "title": "Ayuda a tus seres queridos",
+    "subtitle": "a recordar quién fuiste",
+    "description": "Un lugar seguro en internet que guarda tus fotos, voz e historias. Cuando ya no estés, se convierte en una memoria viva para tu familia y amigos.",
+    "ctaButton": "Apúntate antes de que sea tarde",
+    "ctaSubtext": "El tiempo no perdona. Tus historias podrían perderse para siempre.",
     "valueProposition": {
-      "title": "No dejes que tus recuerdos desaparezcan",
-      "description": "Cada día que pasa es otro día en que tus historias corren el riesgo de perderse para siempre. Asegura tu lugar ahora mientras aún puedas."
+      "title": "No dejes que tu memoria se desvanezca",
+      "description": "Cada día que pasa es un día más donde tus historias corren peligro de perderse para siempre. Asegura tu lugar ahora, mientras puedas."
     },
     "features": {
-      "preserveMemories": "Preservar Recuerdos",
-      "digitalTimeCapsule": "Cápsula del Tiempo Digital",
-      "forYourFamily": "Para tu Familia"
+      "preserveMemories": "Preservar recuerdos",
+      "digitalTimeCapsule": "Cápsula digital",
+      "forYourFamily": "Para tu familia"
     }
   },
   "features": {
     "whatIsTitle": "¿Qué es The Last Vault?",
-    "whatIsDescription1": "The Last Vault es como una cápsula del tiempo solo para ti. Mientras estés vivo, recopila de forma segura tus mensajes, fotos, videos y grabaciones.",
-    "whatIsDescription2": "Cuando ya no estés, se abre y permite que tus seres queridos te vean y te escuchen de nuevo.",
-    "howItWorksTitle": "Cómo Funciona",
+    "whatIsDescription1": "The Last Vault es como una cápsula del tiempo personal. Mientras vives, guarda de forma segura tus mensajes, fotos, videos y grabaciones.",
+    "whatIsDescription2": "Cuando ya no estés, se abre y permite que tus seres queridos te vean y escuchen otra vez.",
+    "howItWorksTitle": "Cómo funciona",
     "whileAlive": {
-      "badge": "🥳 Mientras Estés Vivo",
-      "title": "Construyendo tu Legado",
+      "badge": "🥳 Mientras vives",
+      "title": "Construyendo tu legado",
       "items": [
         "Subes tus fotos, videos, notas de voz o textos",
-        "Todo se bloquea y se almacena de forma segura en línea de manera especial",
-        "Eliges cómo se abrirá más tarde (un toque, tiempo o personas en las que confías)"
+        "Todo se cifra y guarda de forma segura en la red",
+        "Decides cómo se abrirá: tiempo, personas de confianza u otros métodos"
       ]
     },
     "afterGone": {
-      "badge": "🥀 Después de que te Vayas",
-      "title": "Tu Memoria Digital",
+      "badge": "🥀 Después de partir",
+      "title": "Tu memoria viva",
       "items": [
-        "La bóveda se abre solo cuando se siguen las reglas que elegiste",
-        "Una versión de IA de ti puede hablar con tu familia, usando tu propia voz y palabras"
+        "La caja fuerte se abre solo cuando se cumplen las condiciones que elegiste",
+        "Una versión IA tuya puede hablar con tu familia usando tu propia voz y palabras"
       ]
     },
-    "whyMattersTitle": "Por Qué Importa",
-    "whyMattersDescription": "Los recuerdos pueden desvanecerse. Los teléfonos se pierden. La gente olvida las contraseñas. Pero tu bóveda permanece, para que tu familia siempre tenga una forma de recordarte.",
+    "whyMattersTitle": "Por qué importa",
+    "whyMattersDescription": "La memoria se desvanece. Los móviles se rompen. Las contraseñas se olvidan. Pero tu caja fuerte permanece para que tu familia siempre tenga una forma de recordarte.",
     "mediaLabels": {
       "photos": "Fotos",
       "videos": "Videos",
       "voice": "Voz",
       "memories": "Recuerdos"
     },
-    "takeActionTitle": "Actúa Hoy",
+    "takeActionTitle": "Actúa ahora",
     "takeActionDescription": "Preserva tu legado hoy y asegúrate de que tu familia siempre tenga una forma de recordarte.",
     "ctaButtons": {
-      "preserveLegacy": "Preserva tu Legado Ahora",
-      "dontWait": "No Esperes Hasta que Sea Demasiado Tarde"
+      "preserveLegacy": "Preservar legado ahora",
+      "dontWait": "No esperes más"
     }
   },
   "stories": {
-    "badge": "Historias Reales de Pérdida",
-    "title": "\"Lo que Daría...\"",
-    "subtitle": "Cada día, las personas pierden las huellas digitales de sus seres queridos. Estas son sus historias y por qué estamos construyendo The Last Vault.",
+    "badge": "Historias reales de pérdida",
+    "title": "«Lo que daría por...»",
+    "subtitle": "Cada día, personas pierden para siempre las huellas digitales de sus seres queridos. Estas son sus historias y por qué creamos The Last Vault.",
     "items": [
       {
-        "name": "Sarah Chen",
-        "age": "34",
-        "relationship": "Perdió a su padre por cáncer",
-        "story": "Papá se grabó leyendo cuentos para dormir para mi hija antes de fallecer. Ahora el teléfono con esas grabaciones está roto y no puedo recuperarlas. Daría cualquier cosa por escuchar su voz otra vez contándole sobre el valiente ratoncito. Ella pide los cuentos del abuelo todas las noches, y todo lo que puedo decir es 'Lo siento, bebé. Ya no están.'",
+        "name": "Carmen Rodríguez",
+        "age": "35",
+        "relationship": "perdió a su padre por cáncer",
+        "story": "Papá grabó cuentos para mi niña antes de irse, sabiendo que le quedaba poco. Le contaba: «Había una vez una ratoncita valiente...» El móvil con las grabaciones se estropeó y no pude recuperarlas. Ahora Lucía me pide cada noche: «Mami, pon los cuentos del abuelo», y yo no sé qué decirle. Su voz se perdió para siempre.",
         "quote": "Solo quiero que recuerde su voz..."
       },
       {
-        "name": "Michael Rodríguez",
-        "age": "28",
-        "relationship": "Perdió a su esposa en un accidente",
-        "story": "Emma y yo documentamos toda nuestra relación en Facebook: 8 años de fotos, videos, publicaciones y comentarios. Después de que falleció, revisaba nuestra cronología todas las noches, leyendo sus publicaciones y viendo su sonrisa en miles de fotos. Luego Facebook suspendió mi cuenta por 'violaciones de derechos de autor' porque publiqué un video de nosotros bailando una canción con derechos de autor en nuestra boda. Cuando apelé, eliminaron todo permanentemente. Ocho años de nuestra vida juntos, desaparecidos. Su última publicación diciendo 'Te amo' la mañana del accidente, borrada para siempre.",
-        "quote": "Toda nuestra historia de amor fue eliminada..."
+        "name": "Alejandro Martín",
+        "age": "30",
+        "relationship": "perdió a su esposa en accidente",
+        "story": "Con María documentamos toda nuestra relación en Instagram — 7 años de fotos, stories, mensajes. Después de su muerte, me pasaba las noches repasando nuestras fotos, leyendo sus mensajes. Luego Instagram cerró mi cuenta por 'actividad sospechosa' cuando subí demasiadas fotos suyas seguidas. Al reclamar, me dijeron que las habían borrado por 'política de privacidad'. Siete años juntos, borrados. Su último «Te amo» esa mañana — desaparecido.",
+        "quote": "Nuestra historia de amor fue eliminada..."
       },
       {
-        "name": "David Kim",
-        "age": "45",
-        "relationship": "Perdió a su madre por Alzheimer",
-        "story": "Mamá comenzó a grabar historias sobre la historia de nuestra familia cuando fue diagnosticada por primera vez, esperando preservarlas antes de que su memoria se desvaneciera. Teníamos horas de ella hablando sobre bisabuelos, tradiciones antiguas, recetas y secretos familiares. Estaban en la laptop de mi hermano cuando su casa se inundó. Todas esas historias, toda esa historia, murió con ella dos veces. Una vez en su mente, y una vez en esa agua.",
-        "quote": "La historia de nuestra familia murió con ella..."
+        "name": "Isabel Fernández",
+        "age": "52",
+        "relationship": "perdió a su madre con Alzheimer",
+        "story": "Mamá empezó a grabar historias familiares cuando le dieron el diagnóstico, queriendo preservarlas antes de que se le fuera la memoria. Horas hablando de los abuelos, de la guerra, de cómo conoció a papá, recetas de la abuela. Todo estaba en el ordenador de mi hermano cuando se le inundó el piso. Las historias de la familia, nuestra genealogía, los secretos — todo se ahogó con el agua.",
+        "quote": "La historia familiar murió con ella..."
       }
     ],
-    "ctaTitle": "No Dejes que Esto le Pase a tu Familia",
-    "ctaDescription": "Tus recuerdos, tu voz, tus historias son más preciosos de lo que te das cuenta. The Last Vault asegura que nunca se pierdan, corrompan u olviden.",
+    "ctaTitle": "No dejes que esto le pase a tu familia",
+    "ctaDescription": "Tus recuerdos, tu voz, tus historias son un tesoro para los tuyos. The Last Vault garantiza que se conserven para siempre.",
     "stats": [
-      { "number": "3.2 mil millones", "text": "Fotos perdidas cada año por fallas de dispositivos" },
-      { "number": "94%", "text": "De las personas no tienen respaldo de videos familiares" },
-      { "number": "Para siempre", "text": "Cuánto dura el dolor cuando se pierden los recuerdos" }
+      { "number": "2,9 mil millones", "text": "fotos se pierden cada año por averías" },
+      { "number": "92%", "text": "familias no tienen copias de sus videos" },
+      { "number": "Para siempre", "text": "dura el dolor cuando se pierden los recuerdos" }
     ]
   },
   "security": {
-    "badge": "🔐 Lo que lo Hace Especial",
-    "title": "Tus Recuerdos,",
-    "titleAccent": "Tu Control",
-    "description": "A diferencia del almacenamiento en la nube tradicional, The Last Vault te da control completo. Tus recuerdos se almacenan de una manera que ninguna empresa o gobierno puede acceder sin tu permiso.",
+    "badge": "🔐 Lo que lo hace especial",
+    "title": "Tus recuerdos,",
+    "titleAccent": "tu control",
+    "description": "A diferencia del almacenamiento en la nube tradicional, The Last Vault te da control total. Tus datos se guardan de forma que ninguna empresa ni gobierno puede acceder sin tu permiso.",
     "features": [
       {
-        "title": "Solo Tú Controlas el Acceso",
-        "description": "Solo tú puedes desbloquear tus cosas mientras estés vivo"
+        "title": "Solo tú tienes el control",
+        "description": "Solo tú puedes desbloquear tus datos mientras vivas"
       },
       {
-        "title": "Almacenamiento Descentralizado",
-        "description": "Todo se almacena en redes descentralizadas que no pertenecen a ninguna empresa"
+        "title": "Almacenamiento distribuido",
+        "description": "Todo se guarda en redes que no pertenecen a ninguna empresa"
       },
       {
-        "title": "Tú Controlas Cuándo Se Abre",
-        "description": "Tú controlas cómo y cuándo se abre"
+        "title": "Tú decides cuándo se abre",
+        "description": "Configuras todas las condiciones de acceso"
       },
       {
-        "title": "Privacidad por Diseño",
-        "description": "La IA solo sabe lo que decides darle"
+        "title": "Privacidad desde el diseño",
+        "description": "La IA solo sabe lo que tú decides compartir"
       }
     ],
-    "whyDecentralizedTitle": "Por Qué Importa la Descentralización",
+    "whyDecentralizedTitle": "Por qué importa la descentralización",
     "whyDecentralizedItems": [
       "Ninguna empresa puede acceder a tus recuerdos",
-      "Tú decides quién obtiene acceso",
-      "Tus datos viven para siempre, incluso si desaparecemos",
-      "Construido con tecnología blockchain",
-      "Cifrado de extremo a extremo",
+      "Tú decides quién puede verlos",
+      "Tus datos perduran aunque nosotros desaparezcamos",
+      "Basado en tecnología blockchain",
+      "Cifrado extremo a extremo",
       "Arquitectura de conocimiento cero"
     ],
-    "networkTitle": "Red Descentralizada",
-    "networkDescription": "Tus recuerdos están protegidos en múltiples nodos seguros"
+    "networkTitle": "Red distribuida",
+    "networkDescription": "Tus recuerdos están protegidos en múltiples servidores seguros"
   },
   "waitlist": {
-    "badge": "🌑 Los Recuerdos se Desvanecen. El Legado No Tiene Por Qué.",
-    "title": "Se Está Acabando el Tiempo:",
-    "subtitle": "Únete a la lista de espera para guardar tus recuerdos antes de que se desvanezcan. Nunca habrá una segunda oportunidad para preservar tu historia para aquellos que amas.",
-    "ctaTitle": "Guarda tu Lugar Antes de que Desaparezca",
-    "description": "Cada día, los recuerdos se pierden para siempre. Únete a la lista de espera ahora y asegúrate de que tu historia te sobreviva.",
-    "ctaButton": "Únete a la Lista de Espera Antes de que Sea Demasiado Tarde",
-    "disclaimer": "Esta es tu única oportunidad de asegurarte de que tus recuerdos no se pierdan en el tiempo."
+    "badge": "🌑 Los recuerdos se desvanecen. El legado permanece.",
+    "title": "El tiempo se agota:",
+    "subtitle": "Apúntate a la lista para salvar tus recuerdos antes de que se pierdan. No habrá segunda oportunidad de preservar tu historia para quienes amas.",
+    "ctaTitle": "Reserva tu lugar antes de que desaparezca",
+    "description": "Cada día se pierden recuerdos para siempre. Apúntate ahora y garantiza que tu historia te sobreviva.",
+    "ctaButton": "Apuntarse a la lista de espera",
+    "disclaimer": "Esta es tu única oportunidad de asegurar que tus recuerdos no se pierdan en el tiempo."
   },
   "footer": {
     "copyright": "The Last Vault. Todos los derechos reservados.",
     "socialLabels": {
-      "email": "Correo electrónico",
+      "email": "Correo",
       "telegram": "Telegram"
     }
   },
   "common": {
-    "joinWaitlist": "Unirse a la Lista de Espera",
-    "readMore": "Leer Más",
-    "learnMore": "Aprender Más",
+    "joinWaitlist": "Apuntarse a la lista",
+    "readMore": "Leer más",
+    "learnMore": "Saber más",
     "getStarted": "Empezar"
   }
 } 

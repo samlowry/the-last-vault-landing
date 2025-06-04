@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Features from './components/Features'
 import Security from './components/Security'
-import Pricing from './components/Pricing'
+import Waitlist from './components/Pricing'
 import Footer from './components/Footer'
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Hero />
         <Features />
         <Security />
-        <Pricing />
+        <Waitlist />
       </main>
       <Footer />
     </div>

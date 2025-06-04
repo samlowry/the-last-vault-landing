@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Shield, Menu, X } from 'lucide-react'
+import { Heart, Menu, X } from 'lucide-react'
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    { href: '#features', label: 'Features' },
+    { href: '#how-it-works', label: 'How It Works' },
     { href: '#security', label: 'Security' },
-    { href: '#pricing', label: 'Pricing' },
+    { href: '#waitlist', label: 'Waitlist' },
     { href: '#contact', label: 'Contact' }
   ]
 
@@ -26,8 +26,8 @@ const Header: React.FC = () => {
             className="flex items-center space-x-2"
             whileHover={{ scale: 1.05 }}
           >
-            <Shield className="h-8 w-8 text-primary-500" />
-            <span className="text-xl font-bold text-white">Last Vault</span>
+            <Heart className="h-8 w-8 text-primary-500" />
+            <span className="text-xl font-bold text-white">The Last Vault</span>
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -50,7 +50,7 @@ const Header: React.FC = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Get Started
+            Join Waitlist
           </motion.button>
 
           {/* Mobile Menu Button */}
@@ -81,7 +81,7 @@ const Header: React.FC = () => {
               </a>
             ))}
             <button className="btn-primary w-full mt-4">
-              Get Started
+              Join Waitlist
             </button>
           </motion.div>
         )}

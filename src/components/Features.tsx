@@ -1,66 +1,18 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { 
-  Shield, 
-  Cloud, 
-  Smartphone, 
+  Heart, 
+  Clock, 
+  Upload, 
+  Lock, 
   Users, 
-  FileText, 
-  Zap,
-  Lock,
-  Globe,
-  Database
+  Mic,
+  Camera,
+  MessageCircle,
+  Shield
 } from 'lucide-react'
 
 const Features: React.FC = () => {
-  const features = [
-    {
-      icon: Shield,
-      title: "Military-Grade Security",
-      description: "AES-256 encryption with quantum-resistant algorithms to protect your data against future threats."
-    },
-    {
-      icon: Cloud,
-      title: "Secure Cloud Sync",
-      description: "Seamlessly sync across all devices with zero-knowledge architecture. We never see your data."
-    },
-    {
-      icon: Smartphone,
-      title: "Biometric Access",
-      description: "Use fingerprint, face recognition, or voice authentication for secure and convenient access."
-    },
-    {
-      icon: Users,
-      title: "Secure Sharing",
-      description: "Share passwords and documents with family members using granular permission controls."
-    },
-    {
-      icon: FileText,
-      title: "Digital Documents",
-      description: "Store important documents, certificates, and files with automatic OCR and search."
-    },
-    {
-      icon: Zap,
-      title: "Auto-Fill & Generate",
-      description: "Generate strong passwords and auto-fill login credentials across all your devices."
-    },
-    {
-      icon: Lock,
-      title: "Emergency Access",
-      description: "Designate trusted contacts who can access your vault in case of emergency."
-    },
-    {
-      icon: Globe,
-      title: "Global Accessibility",
-      description: "Access your vault from anywhere in the world with our distributed infrastructure."
-    },
-    {
-      icon: Database,
-      title: "Secure Backup",
-      description: "Automated backups with multiple redundancy layers ensure your data is never lost."
-    }
-  ]
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -85,84 +37,202 @@ const Features: React.FC = () => {
   }
 
   return (
-    <section id="features" className="py-20 relative">
-      <div className="container mx-auto px-4">
-        {/* Section Header */}
-        <motion.div
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-            Everything You Need
-          </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Comprehensive security features designed to protect your digital life 
-            while keeping everything accessible and easy to use.
-          </p>
-        </motion.div>
-
-        {/* Features Grid */}
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          {features.map((feature, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              className="group"
-            >
-              <motion.div
-                className="glass-effect p-6 rounded-2xl h-full hover:bg-white/20 transition-all duration-300"
-                whileHover={{ 
-                  y: -5,
-                  transition: { duration: 0.3 }
-                }}
-              >
-                {/* Icon */}
-                <motion.div
-                  className="w-12 h-12 bg-primary-600/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-600/30 transition-colors duration-300"
-                  whileHover={{ scale: 1.1, rotate: 5 }}
-                >
-                  <feature.icon className="h-6 w-6 text-primary-400" />
-                </motion.div>
-
-                {/* Content */}
-                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-primary-300 transition-colors duration-300">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  {feature.description}
-                </p>
-              </motion.div>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        {/* Bottom CTA */}
-        <motion.div
-          className="text-center mt-16"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true }}
-        >
-          <motion.button
-            className="btn-primary text-lg px-8 py-4"
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
+    <>
+      {/* What is The Last Vault Section */}
+      <section className="py-20 relative">
+        <div className="container mx-auto px-4">
+          <motion.div
+            className="max-w-4xl mx-auto text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
           >
-            Explore All Features
-          </motion.button>
-        </motion.div>
-      </div>
-    </section>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+              What is The Last Vault?
+            </h2>
+            
+            <div className="glass-effect p-8 md:p-12 rounded-3xl">
+              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed mb-8">
+                The Last Vault is like a <span className="text-primary-400 font-semibold">time capsule just for you</span>. 
+                While you're alive, it safely collects your messages, pictures, videos, and recordings.
+              </p>
+              
+              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
+                When you're not around anymore, it opens and lets your loved ones 
+                <span className="text-primary-400 font-semibold"> see and hear you again</span>.
+              </p>
+              
+              {/* Decorative Elements */}
+              <div className="flex justify-center items-center gap-6 mt-8">
+                <motion.div
+                  className="p-3 rounded-full bg-primary-600/20"
+                  animate={{ scale: [1, 1.1, 1] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                >
+                  <Heart className="h-6 w-6 text-primary-400" />
+                </motion.div>
+                <div className="h-px w-12 bg-gradient-to-r from-transparent via-primary-400 to-transparent"></div>
+                <motion.div
+                  className="p-3 rounded-full bg-primary-600/20"
+                  animate={{ scale: [1, 1.1, 1] }}
+                  transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
+                >
+                  <Clock className="h-6 w-6 text-primary-400" />
+                </motion.div>
+                <div className="h-px w-12 bg-gradient-to-r from-transparent via-primary-400 to-transparent"></div>
+                <motion.div
+                  className="p-3 rounded-full bg-primary-600/20"
+                  animate={{ scale: [1, 1.1, 1] }}
+                  transition={{ duration: 2, repeat: Infinity, delay: 1 }}
+                >
+                  <Users className="h-6 w-6 text-primary-400" />
+                </motion.div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* How It Works Section */}
+      <section className="py-20 relative">
+        <div className="container mx-auto px-4">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+              How It Works
+            </h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
+            {/* While You're Alive */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="glass-effect p-8 rounded-3xl"
+            >
+              <div className="text-center mb-8">
+                <div className="inline-flex items-center px-4 py-2 rounded-full bg-green-600/20 text-green-300 border border-green-600/30 mb-4">
+                  <span className="text-sm font-medium">While You're Alive</span>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-6">Building Your Legacy</h3>
+              </div>
+
+              <div className="space-y-6">
+                {[
+                  { icon: Upload, text: "You upload your photos, videos, voice notes, or texts" },
+                  { icon: Lock, text: "Everything is locked and safely stored online in a special way" },
+                  { icon: Users, text: "You choose how it will open later (a tap, a time, or by people you trust)" }
+                ].map((item, index) => (
+                  <motion.div
+                    key={index}
+                    className="flex items-start gap-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.2 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="flex-shrink-0 w-10 h-10 bg-green-600/20 rounded-lg flex items-center justify-center">
+                      <item.icon className="h-5 w-5 text-green-400" />
+                    </div>
+                    <p className="text-gray-300 leading-relaxed">{item.text}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* After You're Gone */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="glass-effect p-8 rounded-3xl"
+            >
+              <div className="text-center mb-8">
+                <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary-600/20 text-primary-300 border border-primary-600/30 mb-4">
+                  <span className="text-sm font-medium">After You're Gone</span>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-6">Your Digital Memory</h3>
+              </div>
+
+              <div className="space-y-6">
+                {[
+                  { icon: Clock, text: "The vault opens only when the rules you picked are followed" },
+                  { icon: MessageCircle, text: "An AI version of you can talk to your family, using your own voice and words" }
+                ].map((item, index) => (
+                  <motion.div
+                    key={index}
+                    className="flex items-start gap-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.2 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary-600/20 rounded-lg flex items-center justify-center">
+                      <item.icon className="h-5 w-5 text-primary-400" />
+                    </div>
+                    <p className="text-gray-300 leading-relaxed">{item.text}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why It Matters Section */}
+      <section className="py-20 relative">
+        <div className="container mx-auto px-4">
+          <motion.div
+            className="max-w-4xl mx-auto text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+              Why It Matters
+            </h2>
+            
+            <div className="glass-effect p-8 md:p-12 rounded-3xl">
+              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
+                Memories can fade. Phones get lost. People forget passwords. 
+                But your vault stays — so your family always has a way to 
+                <span className="text-primary-400 font-semibold"> remember you</span>.
+              </p>
+              
+              {/* Emotional Icons */}
+              <div className="flex justify-center items-center gap-8 mt-8">
+                {[
+                  { icon: Camera, label: "Photos" },
+                  { icon: Mic, label: "Voice" },
+                  { icon: Heart, label: "Memories" }
+                ].map((item, index) => (
+                  <motion.div
+                    key={index}
+                    className="flex flex-col items-center gap-2"
+                    whileHover={{ y: -5, scale: 1.05 }}
+                  >
+                    <div className="p-4 rounded-full bg-primary-600/20">
+                      <item.icon className="h-6 w-6 text-primary-400" />
+                    </div>
+                    <span className="text-sm text-gray-400">{item.label}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+    </>
   )
 }
 

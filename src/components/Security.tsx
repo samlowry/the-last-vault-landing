@@ -1,38 +1,38 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Shield, Lock, Eye, Server, Award, Check } from 'lucide-react'
+import { Shield, Lock, Eye, Server, Network, Check } from 'lucide-react'
 
 const Security: React.FC = () => {
   const securityFeatures = [
     {
-      icon: Shield,
-      title: "AES-256 Encryption",
-      description: "Military-grade encryption that's virtually unbreakable"
+      icon: Lock,
+      title: "Only You Control Access",
+      description: "Only you can unlock your stuff while you're alive"
     },
     {
-      icon: Lock,
-      title: "Zero-Knowledge Architecture",
-      description: "We can't see your data even if we wanted to"
+      icon: Network,
+      title: "Decentralized Storage",
+      description: "Everything is stored on decentralized networks that don't belong to any company"
     },
     {
       icon: Eye,
-      title: "Regular Security Audits",
-      description: "Third-party security assessments and penetration testing"
+      title: "You Control When It Opens",
+      description: "You control how and when it opens"
     },
     {
-      icon: Server,
-      title: "Distributed Infrastructure",
-      description: "Data stored across multiple secure data centers"
+      icon: Shield,
+      title: "Privacy by Design",
+      description: "The AI only knows what you decide to give it"
     }
   ]
 
-  const certifications = [
-    "SOC 2 Type II Certified",
-    "GDPR Compliant",
-    "ISO 27001 Certified",
-    "CCPA Compliant",
-    "HIPAA Ready",
-    "Bug Bounty Program"
+  const specialFeatures = [
+    "No company can access your memories",
+    "You decide who gets access",
+    "Your data lives forever, even if we disappear",
+    "Built on blockchain technology",
+    "End-to-end encryption",
+    "Zero-knowledge architecture"
   ]
 
   return (
@@ -48,20 +48,20 @@ const Security: React.FC = () => {
           >
             <div className="mb-6">
               <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-600/20 text-primary-300 border border-primary-600/30">
-                🛡️ Enterprise Security
+                🔐 What Makes It Special
               </span>
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-              Bank-Level Security
+              Your Memories,
               <br />
-              <span className="text-primary-400">You Can Trust</span>
+              <span className="text-primary-400">Your Control</span>
             </h2>
 
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Your data is protected by the same encryption standards used by 
-              governments and financial institutions worldwide. We've built our 
-              infrastructure from the ground up with security as the foundation.
+              Unlike traditional cloud storage, The Last Vault puts you in complete 
+              control. Your memories are stored in a way that no company or government 
+              can access without your permission.
             </p>
 
             {/* Security Features */}
@@ -90,7 +90,7 @@ const Security: React.FC = () => {
               ))}
             </div>
 
-            {/* Certifications */}
+            {/* Special Features */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -98,13 +98,13 @@ const Security: React.FC = () => {
               viewport={{ once: true }}
             >
               <h3 className="text-lg font-semibold text-white mb-4">
-                Compliance & Certifications
+                Why Decentralized Matters
               </h3>
-              <div className="grid grid-cols-2 gap-3">
-                {certifications.map((cert, index) => (
+              <div className="grid grid-cols-1 gap-3">
+                {specialFeatures.map((feature, index) => (
                   <div key={index} className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-green-400 flex-shrink-0" />
-                    <span className="text-sm text-gray-300">{cert}</span>
+                    <span className="text-sm text-gray-300">{feature}</span>
                   </div>
                 ))}
               </div>
@@ -120,7 +120,7 @@ const Security: React.FC = () => {
             viewport={{ once: true }}
           >
             <div className="relative">
-              {/* Central Shield */}
+              {/* Central Network */}
               <motion.div
                 className="glass-effect p-8 rounded-3xl relative z-10"
                 whileHover={{ scale: 1.02 }}
@@ -137,14 +137,14 @@ const Security: React.FC = () => {
                     }}
                     transition={{ duration: 2, repeat: Infinity }}
                   >
-                    <Shield className="h-10 w-10 text-primary-400" />
+                    <Network className="h-10 w-10 text-primary-400" />
                   </motion.div>
                   
                   <h3 className="text-2xl font-bold text-white mb-2">
-                    256-bit Encryption
+                    Decentralized Network
                   </h3>
                   <p className="text-gray-300">
-                    Your data is encrypted with the strongest security available
+                    Your memories are protected across multiple secure nodes
                   </p>
                 </div>
               </motion.div>
@@ -177,7 +177,7 @@ const Security: React.FC = () => {
                   ease: "easeInOut"
                 }}
               >
-                <Award className="h-8 w-8 text-primary-400" />
+                <Shield className="h-8 w-8 text-primary-400" />
               </motion.div>
 
               <motion.div
@@ -198,7 +198,7 @@ const Security: React.FC = () => {
           </motion.div>
         </div>
 
-        {/* Trust Indicators */}
+        {/* Trust Message */}
         <motion.div
           className="mt-20 text-center"
           initial={{ opacity: 0, y: 30 }}
@@ -206,13 +206,15 @@ const Security: React.FC = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <p className="text-gray-400 mb-8">Trusted by over 100,000+ users worldwide</p>
-          <div className="flex justify-center items-center gap-8 opacity-60">
-            {/* Company logos would go here */}
-            <div className="text-gray-500 font-semibold">Fortune 500</div>
-            <div className="text-gray-500 font-semibold">Government</div>
-            <div className="text-gray-500 font-semibold">Healthcare</div>
-            <div className="text-gray-500 font-semibold">Education</div>
+          <div className="glass-effect p-8 rounded-3xl max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Built for Forever
+            </h3>
+            <p className="text-gray-300 text-lg leading-relaxed">
+              Traditional cloud services can disappear, change their terms, or be shut down. 
+              The Last Vault uses decentralized technology to ensure your memories survive 
+              longer than any single company or service.
+            </p>
           </div>
         </motion.div>
       </div>

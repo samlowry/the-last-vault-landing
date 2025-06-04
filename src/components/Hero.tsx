@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { ArrowRight, Play, Shield, Lock, Key } from 'lucide-react'
+import { ArrowRight, Heart, Clock, Users } from 'lucide-react'
 
 const Hero: React.FC = () => {
   const containerVariants = {
@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
             className="inline-flex items-center px-4 py-2 rounded-full glass-effect mb-8"
           >
             <span className="text-sm font-medium text-gray-300">
-              🔐 Military-grade encryption
+              💙 A digital memory for your loved ones
             </span>
           </motion.div>
 
@@ -78,10 +78,10 @@ const Hero: React.FC = () => {
             variants={itemVariants}
             className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
           >
-            Secure Your
+            Help Your Loved Ones
             <br />
             <span className="bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
-              Digital Legacy
+              Remember Who You Were
             </span>
           </motion.h1>
 
@@ -90,8 +90,8 @@ const Hero: React.FC = () => {
             variants={itemVariants}
             className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed"
           >
-            The ultimate secure digital vault for your most important passwords, documents, 
-            and memories. Protected by quantum-resistant encryption.
+            A safe place online that keeps your photos, voice, and stories. 
+            After you're gone, it turns into a digital memory for your family and friends.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -104,7 +104,7 @@ const Hero: React.FC = () => {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
-              Start Free Trial
+              Join the Waitlist
               <ArrowRight className="h-5 w-5" />
             </motion.button>
             
@@ -113,9 +113,22 @@ const Hero: React.FC = () => {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Play className="h-5 w-5" />
-              Watch Demo
+              <Users className="h-5 w-5" />
+              Invite Friends → Get Earlier Access
             </motion.button>
+          </motion.div>
+
+          {/* Value Proposition */}
+          <motion.div
+            variants={itemVariants}
+            className="glass-effect p-6 rounded-2xl max-w-2xl mx-auto mb-16"
+          >
+            <h3 className="text-xl font-semibold text-white mb-3">
+              Be one of the first to save your memories
+            </h3>
+            <p className="text-gray-300">
+              Sign up now to save your spot. You can invite people you trust to help open it later.
+            </p>
           </motion.div>
 
           {/* Feature Icons */}
@@ -124,9 +137,9 @@ const Hero: React.FC = () => {
             className="flex justify-center items-center gap-8 md:gap-12"
           >
             {[
-              { icon: Shield, label: "End-to-End Encrypted" },
-              { icon: Lock, label: "Zero-Knowledge" },
-              { icon: Key, label: "Biometric Access" }
+              { icon: Heart, label: "Preserve Memories" },
+              { icon: Clock, label: "Digital Time Capsule" },
+              { icon: Users, label: "For Your Family" }
             ].map((feature, index) => (
               <motion.div
                 key={index}

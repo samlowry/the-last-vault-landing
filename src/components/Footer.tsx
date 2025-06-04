@@ -1,38 +1,38 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Shield, Mail, MapPin, Phone, Github, Twitter, Linkedin } from 'lucide-react'
+import { Heart, Mail, MapPin, Phone, Github, Twitter, Linkedin } from 'lucide-react'
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear()
 
   const footerLinks = {
     product: [
-      { label: "Features", href: "#features" },
+      { label: "How It Works", href: "#how-it-works" },
       { label: "Security", href: "#security" },
-      { label: "Pricing", href: "#pricing" },
-      { label: "Downloads", href: "#downloads" },
-      { label: "API", href: "#api" }
+      { label: "Waitlist", href: "#waitlist" },
+      { label: "Early Access", href: "#early-access" },
+      { label: "Roadmap", href: "#roadmap" }
     ],
     company: [
       { label: "About Us", href: "#about" },
-      { label: "Careers", href: "#careers" },
+      { label: "Our Mission", href: "#mission" },
       { label: "Blog", href: "#blog" },
       { label: "Press", href: "#press" },
-      { label: "Partners", href: "#partners" }
+      { label: "Careers", href: "#careers" }
     ],
     support: [
       { label: "Help Center", href: "#help" },
       { label: "Contact Support", href: "#contact" },
-      { label: "System Status", href: "#status" },
-      { label: "Bug Bounty", href: "#bounty" },
-      { label: "Community", href: "#community" }
+      { label: "Community", href: "#community" },
+      { label: "Documentation", href: "#docs" },
+      { label: "FAQ", href: "#faq" }
     ],
     legal: [
       { label: "Privacy Policy", href: "#privacy" },
       { label: "Terms of Service", href: "#terms" },
+      { label: "Data Protection", href: "#data-protection" },
       { label: "Cookie Policy", href: "#cookies" },
-      { label: "GDPR", href: "#gdpr" },
-      { label: "Security Report", href: "#security-report" }
+      { label: "Decentralization", href: "#decentralization" }
     ]
   }
 
@@ -57,28 +57,28 @@ const Footer: React.FC = () => {
           >
             {/* Logo */}
             <div className="flex items-center space-x-2 mb-6">
-              <Shield className="h-8 w-8 text-primary-500" />
-              <span className="text-xl font-bold text-white">Last Vault</span>
+              <Heart className="h-8 w-8 text-primary-500" />
+              <span className="text-xl font-bold text-white">The Last Vault</span>
             </div>
 
             <p className="text-gray-300 mb-6 leading-relaxed">
-              The ultimate secure digital vault for your most important passwords, 
-              documents, and memories. Protected by military-grade encryption.
+              A safe place online that keeps your photos, voice, and stories. 
+              After you're gone, it turns into a digital memory for your family and friends.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-300">
                 <Mail className="h-4 w-4 text-primary-400" />
-                <span className="text-sm">support@lastvault.com</span>
+                <span className="text-sm">hello@thelastvault.com</span>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <Phone className="h-4 w-4 text-primary-400" />
-                <span className="text-sm">+1 (555) 123-4567</span>
+                <span className="text-sm">Support via email only</span>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <MapPin className="h-4 w-4 text-primary-400" />
-                <span className="text-sm">San Francisco, CA</span>
+                <span className="text-sm">Distributed globally</span>
               </div>
             </div>
           </motion.div>
@@ -122,10 +122,10 @@ const Footer: React.FC = () => {
         >
           <div className="text-center max-w-2xl mx-auto">
             <h3 className="text-xl font-bold text-white mb-2">
-              Stay Updated with Security News
+              Start Saving What Matters Today
             </h3>
             <p className="text-gray-300 mb-6">
-              Get the latest security tips, product updates, and industry insights delivered to your inbox.
+              Join our waitlist to be the first to know when The Last Vault is ready to preserve your memories.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
@@ -138,7 +138,7 @@ const Footer: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Subscribe
+                Join Waitlist
               </motion.button>
             </div>
           </div>
@@ -155,7 +155,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             {/* Copyright */}
             <p className="text-gray-400 text-sm">
-              © {currentYear} Last Vault. All rights reserved.
+              © {currentYear} The Last Vault. All rights reserved.
             </p>
 
             {/* Social Links */}
@@ -176,8 +176,8 @@ const Footer: React.FC = () => {
 
             {/* Additional Links */}
             <div className="flex items-center gap-6 text-sm text-gray-400">
-              <span>🔒 SOC 2 Certified</span>
-              <span>🛡️ GDPR Compliant</span>
+              <span>💙 Built with Love</span>
+              <span>🔐 Decentralized</span>
             </div>
           </div>
         </motion.div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Heart, Mail, MapPin, Phone, Github, Twitter, Linkedin } from 'lucide-react'
+import { Heart, Mail, MapPin, Phone, Github, Twitter, Linkedin, Send } from 'lucide-react'
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear()
@@ -37,9 +37,8 @@ const Footer: React.FC = () => {
   }
 
   const socialLinks = [
-    { icon: Twitter, href: "#twitter", label: "Twitter" },
-    { icon: Github, href: "#github", label: "GitHub" },
-    { icon: Linkedin, href: "#linkedin", label: "LinkedIn" }
+    { icon: Mail, href: "mailto:hello@thelastvault.com", label: "E-mail" },
+    { icon: Send, href: "https://t.me/thelastvault", label: "Telegram" }
   ]
 
   return (

@@ -95,7 +95,7 @@ const Features: React.FC = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20 relative">
+      <section id="how-it-works" className="py-20 relative">
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center mb-16"
@@ -213,6 +213,7 @@ const Features: React.FC = () => {
               <div className="flex justify-center items-center gap-8 mt-8">
                 {[
                   { icon: Camera, label: "Photos" },
+                  { icon: Upload, label: "Videos" },
                   { icon: Mic, label: "Voice" },
                   { icon: Heart, label: "Memories" }
                 ].map((item, index) => (

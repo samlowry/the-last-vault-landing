@@ -1,10 +1,28 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight, Users, Heart, Clock, Gift } from 'lucide-react'
 
 const Waitlist: React.FC = () => {
   const [email, setEmail] = useState('')
   const [isSubmitted, setIsSubmitted] = useState(false)
+
+  // Timer logic: show current time (HH:MM:SS), update live
+  const [currentTime, setCurrentTime] = useState({
+    hours: '00',
+    minutes: '00',
+    seconds: '00'
+  })
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const now = new Date()
+      const hours = String(now.getHours()).padStart(2, '0')
+      const minutes = String(now.getMinutes()).padStart(2, '0')
+      const seconds = String(now.getSeconds()).padStart(2, '0')
+      setCurrentTime({ hours, minutes, seconds })
+    }, 200)
+    return () => clearInterval(interval)
+  }, [])
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -25,7 +43,7 @@ const Waitlist: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-            Time Is Running Out
+            Time {currentTime.hours}:{currentTime.minutes}:{currentTime.seconds} Is Running Out
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Join the waitlist to save your memories before they fade away. There will never be a second chance to preserve your story for those you love.

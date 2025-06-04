@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight, Heart, Clock, Users } from 'lucide-react'
 
@@ -25,6 +25,35 @@ const Hero: React.FC = () => {
       }
     }
   }
+
+  // Timer target date (e.g., 30 days from now)
+  const targetDate = useRef(new Date(Date.now() + 30 * 24 * 60 * 60 * 1000))
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+    ms: 0
+  })
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const now = new Date()
+      const diff = targetDate.current.getTime() - now.getTime()
+      if (diff <= 0) {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0, ms: 0 })
+        clearInterval(interval)
+        return
+      }
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24))
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24)
+      const minutes = Math.floor((diff / (1000 * 60)) % 60)
+      const seconds = Math.floor((diff / 1000) % 60)
+      const ms = Math.floor(diff % 1000)
+      setTimeLeft({ days, hours, minutes, seconds, ms })
+    }, 33)
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
@@ -66,7 +95,7 @@ const Hero: React.FC = () => {
           {/* Badge */}
           <motion.div
             variants={itemVariants}
-            className="inline-flex items-center px-4 py-2 rounded-full glass-effect mb-8"
+            className="inline-flex items-center px-4 py-2 rounded-full glass-effect mb-8 mt-12"
           >
             <span className="text-sm font-medium text-gray-300">
               💙 A digital memory for your loved ones

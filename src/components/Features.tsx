@@ -54,13 +54,13 @@ const Features: React.FC = () => {
             
             <div className="glass-effect p-8 md:p-12 rounded-3xl">
               <p className="text-xl md:text-2xl text-text-100 leading-relaxed mb-8">
-                The Last Vault is like a <span className="text-primary-300 font-semibold">time capsule just for you</span>. 
+                The Last Vault is like a <span className="text-text-50 font-semibold">time capsule just for you</span>. 
                 While you're alive, it safely collects your messages, pictures, videos, and recordings.
               </p>
               
               <p className="text-xl md:text-2xl text-text-100 leading-relaxed">
                 When you're not around anymore, it opens and lets your loved ones 
-                <span className="text-primary-300 font-semibold"> see and hear you again</span>.
+                <span className="text-text-50 font-semibold"> see and hear you again</span>.
               </p>
               
               {/* Decorative Elements */}
@@ -70,7 +70,7 @@ const Features: React.FC = () => {
                   animate={{ scale: [1, 1.1, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >
-                  <Heart className="h-6 w-6 text-primary-300" />
+                  <Heart className="h-6 w-6 text-text-50" />
                 </motion.div>
                 <div className="h-px w-12 bg-gradient-to-r from-transparent via-primary-300 to-transparent"></div>
                 <motion.div
@@ -78,7 +78,7 @@ const Features: React.FC = () => {
                   animate={{ scale: [1, 1.1, 1] }}
                   transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
                 >
-                  <Clock className="h-6 w-6 text-primary-300" />
+                  <Clock className="h-6 w-6 text-text-50" />
                 </motion.div>
                 <div className="h-px w-12 bg-gradient-to-r from-transparent via-primary-300 to-transparent"></div>
                 <motion.div
@@ -86,7 +86,7 @@ const Features: React.FC = () => {
                   animate={{ scale: [1, 1.1, 1] }}
                   transition={{ duration: 2, repeat: Infinity, delay: 1 }}
                 >
-                  <Users className="h-6 w-6 text-primary-300" />
+                  <Users className="h-6 w-6 text-text-50" />
                 </motion.div>
               </div>
             </div>
@@ -120,7 +120,7 @@ const Features: React.FC = () => {
             >
               <div className="text-center mb-8">
                 <div className="inline-flex items-center px-4 py-2 rounded-full bg-green-600/20 text-green-300 border border-green-600/30 mb-4">
-                  <span className="text-sm font-medium">While You're Alive</span>
+                  <span className="text-sm font-medium">🥳 While You're Alive</span>
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-6">Building Your Legacy</h3>
               </div>
@@ -140,7 +140,7 @@ const Features: React.FC = () => {
                     viewport={{ once: true }}
                   >
                     <div className="flex-shrink-0 w-10 h-10 bg-green-600/20 rounded-lg flex items-center justify-center">
-                      <item.icon className="h-5 w-5 text-green-400" />
+                      <item.icon className="h-5 w-5 text-text-50" />
                     </div>
                     <p className="text-text-100 leading-relaxed">{item.text}</p>
                   </motion.div>
@@ -157,8 +157,8 @@ const Features: React.FC = () => {
               className="glass-effect p-8 rounded-3xl"
             >
               <div className="text-center mb-8">
-                <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary-600/20 text-primary-300 border border-accent-400/30 mb-4">
-                  <span className="text-sm font-medium">After You're Gone</span>
+                <div className="inline-flex items-center px-4 py-2 rounded-full bg-red-600/20 text-red-300 border border-red-600/30 mb-4">
+                  <span className="text-sm font-medium">🥀 After You're Gone</span>
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-6">Your Digital Memory</h3>
               </div>
@@ -177,7 +177,7 @@ const Features: React.FC = () => {
                     viewport={{ once: true }}
                   >
                     <div className="flex-shrink-0 w-10 h-10 bg-primary-600/20 rounded-lg flex items-center justify-center">
-                      <item.icon className="h-5 w-5 text-primary-300" />
+                      <item.icon className="h-5 w-5 text-text-50" />
                     </div>
                     <p className="text-text-100 leading-relaxed">{item.text}</p>
                   </motion.div>
@@ -206,7 +206,7 @@ const Features: React.FC = () => {
               <p className="text-xl md:text-2xl text-text-100 leading-relaxed">
                 Memories can fade. Phones get lost. People forget passwords. 
                 But your vault stays — so your family always has a way to 
-                <span className="text-primary-300 font-semibold"> remember you</span>.
+                <span className="text-white font-semibold" style={{textShadow: '0 1px 8px rgba(0,0,0,0.5)'}}> remember you</span>.
               </p>
               
               {/* Emotional Icons */}
@@ -223,7 +223,7 @@ const Features: React.FC = () => {
                     whileHover={{ y: -5, scale: 1.05 }}
                   >
                     <div className="p-4 rounded-full bg-primary-600/20">
-                      <item.icon className="h-6 w-6 text-primary-300" />
+                      <item.icon className="h-6 w-6 text-text-50" />
                     </div>
                     <span className="text-sm text-text-50">{item.label}</span>
                   </motion.div>

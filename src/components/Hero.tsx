@@ -109,9 +109,7 @@ const Hero: React.FC = () => {
           >
             Help Your Loved Ones
             <br />
-            <span className="bg-gradient-to-r from-primary-300 to-primary-600 bg-clip-text text-transparent">{/* sunset magenta gradient */}
-              Remember Who You Were
-            </span>
+            <span className="text-text-50 font-semibold">Remember Who You Were</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -172,7 +170,7 @@ const Hero: React.FC = () => {
                 whileHover={{ y: -5 }}
               >
                 <div className="p-3 rounded-full glass-effect">
-                  <feature.icon className="h-6 w-6 text-primary-300" />
+                  <feature.icon className="h-6 w-6 text-text-50" />
                 </div>
                 <span className="text-sm text-text-50 hidden md:block">
                   {feature.label}

@@ -115,15 +115,15 @@ const Stories: React.FC = () => {
                   {/* Story Content */}
                   <div className="flex-1">
                     <div className="relative">
-                      <Quote className="absolute -top-2 -left-2 h-8 w-8 text-primary-400/30" />
-                      <p className="text-gray-300 leading-relaxed mb-6 pl-6 italic">
+                      <Quote className="absolute -top-2 -left-2 h-8 w-8 text-accent-400/80" />
+                      <p className="text-text-100 leading-relaxed mb-6 pl-6 italic">
                         "{story.story}"
                       </p>
                     </div>
                     
                     {/* Pull Quote */}
-                    <div className="border-l-4 border-primary-400 pl-4 py-2 bg-primary-600/10 rounded-r-lg">
-                      <p className="text-primary-300 font-semibold text-lg">
+                    <div className="border-l-4 border-accent-400 pl-4 py-2 bg-primary-600/20 rounded-r-lg">
+                      <p className="text-accent-400 font-semibold text-lg">
                         "{story.quote}"
                       </p>
                     </div>

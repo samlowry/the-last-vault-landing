@@ -47,7 +47,7 @@ const Security: React.FC = () => {
             viewport={{ once: true }}
           >
             <div className="mb-6">
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-600/20 text-primary-300 border border-primary-600/30">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white/20 text-white border border-white/40">
                 🔐 What Makes It Special
               </span>
             </div>

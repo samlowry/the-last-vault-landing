@@ -7,25 +7,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        /* Noble sunset palette: deep purple, muted magenta, golden orange, soft beige */
+        /* Noble sunset palette, 30% darker: deep purple, muted magenta, golden orange, soft beige */
         primary: {
-          50: '#f8e7ef',      // very light pinkish
-          300: '#d76d77',     // muted magenta (sunset mid)
-          500: '#b0436e',     // noble magenta
-          600: '#8a2c5a',     // deep magenta
-          700: '#3a1c71',     // deep purple (sunset start)
+          50: '#bfa6b2',      // 30% darker very light pinkish
+          300: '#8a434a',     // 30% darker muted magenta (sunset mid)
+          500: '#6e2c3e',     // 30% darker noble magenta
+          600: '#4f1d2c',     // 30% darker deep magenta
+          700: '#1e0f3d',     // 30% darker deep purple (sunset start)
         },
         accent: {
-          400: '#ffaf7b',     // golden orange (sunset end)
-          600: '#e07a5f',     // copper accent
+          400: '#b87a4e',     // 30% darker golden orange (sunset end)
+          600: '#8a5637',     // 30% darker copper accent
         },
         background: {
-          900: '#2d193c',     // deep background
-          800: '#3a1c71',     // deep purple
+          900: '#170b23',     // 30% darker deep background
+          800: '#1e0f3d',     // 30% darker deep purple
         },
         text: {
-          50: '#f8f5f2',      // soft beige
-          100: '#e9e4dd',     // light beige
+          50: '#f8f5f2',      // bright soft beige for readability
+          100: '#e9e4dd',     // light beige for readability
         },
         dark: {
           50: '#f8fafc',

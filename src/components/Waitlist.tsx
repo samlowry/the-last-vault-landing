@@ -24,11 +24,18 @@ const Waitlist: React.FC = () => {
     return () => clearInterval(interval)
   }, [])
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Here you would integrate with your waitlist service
-    setIsSubmitted(true)
-    setTimeout(() => setIsSubmitted(false), 3000)
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitted(true);
+    // Отправка email в Google Form
+    await fetch('https://docs.google.com/forms/d/e/1FAIpQLSfhoYaoMLgKeKUyhoGIedKxQR-sSbpVFh1F6241zT_cO-vr_w/formResponse', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({ 'entry.1045781291': email })
+    });
+    setEmail('');
+    setTimeout(() => setIsSubmitted(false), 3000);
   }
 
   return (
@@ -43,7 +50,14 @@ const Waitlist: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-            Time {currentTime.hours}:{currentTime.minutes}:{currentTime.seconds} Is Running Out
+            {/* Add short date before time, e.g. 25.06.04.17:16:13 */}
+            Time Is Running Out {(() => {
+              const now = new Date();
+              const dd = String(now.getDate()).padStart(2, '0');
+              const mm = String(now.getMonth() + 1).padStart(2, '0');
+              const yy = String(now.getFullYear()).slice(-2);
+              return `${dd}.${mm}.${yy}.${currentTime.hours}:${currentTime.minutes}:${currentTime.seconds}`;
+            })()}
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Join the waitlist to save your memories before they fade away. There will never be a second chance to preserve your story for those you love.
@@ -60,7 +74,7 @@ const Waitlist: React.FC = () => {
             viewport={{ once: true }}
           >
             <div className="mb-8">
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary-600/20 text-primary-300 border border-primary-600/30 mb-6">
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/20 text-white border border-white/40 mb-6">
                 <span className="text-sm font-medium">🌑 Memories Fade. Legacy Doesn't Have To.</span>
               </div>
               

@@ -14,8 +14,8 @@
 
 @layer components {
   .gradient-bg {
-    /* Sunset-inspired gradient (flipped vertically): golden orange at the top, muted magenta in the middle, deep purple at the bottom. Symbolizes noble melancholy and the sunset of life. */
-    background: linear-gradient(135deg, #ffaf7b 0%, #d76d77 50%, #3a1c71 100%);
+    /* Sunset-inspired gradient (30% darker): golden orange at the top, muted magenta in the middle, deep purple at the bottom. */
+    background: linear-gradient(135deg, #b87a4e 0%, #8a434a 50%, #1e0f3d 100%);
   }
   
   .glass-effect {

@@ -11,7 +11,7 @@ import {
   MessageCircle,
   Shield
 } from 'lucide-react'
-import { useTranslation } from '../i18n/context'
+import { useTranslation } from '../i18n'
 
 const Features: React.FC = () => {
   const { t } = useTranslation()

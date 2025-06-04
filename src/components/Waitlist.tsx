@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight, Users, Heart, Clock, Gift } from 'lucide-react'
-import { useTranslation } from '../i18n/context'
+import { useTranslation } from '../i18n'
 
 const Waitlist: React.FC = () => {
   const { t } = useTranslation()

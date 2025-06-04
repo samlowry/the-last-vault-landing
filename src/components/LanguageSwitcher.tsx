@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown, Globe } from 'lucide-react'
-import { useTranslation } from '../i18n/context'
-import { languages } from '../i18n/languages'
+import { useTranslation, languages } from '../i18n'
 
 const LanguageSwitcher: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)

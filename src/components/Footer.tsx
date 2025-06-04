@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Heart, Mail, MapPin, Phone, Github, Twitter, Linkedin, Send } from 'lucide-react'
-import { useTranslation } from '../i18n/context'
+import { useTranslation } from '../i18n'
 
 const Footer: React.FC = () => {
   const { t } = useTranslation()

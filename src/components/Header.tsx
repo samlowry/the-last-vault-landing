@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Heart, Menu, X } from 'lucide-react'
-import { useTranslation } from '../i18n/context'
+import { useTranslation } from '../i18n'
 import LanguageSwitcher from './LanguageSwitcher'
 
 const Header: React.FC = () => {

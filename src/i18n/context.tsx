@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react'
+import React, { createContext, useState, useEffect, ReactNode } from 'react'
 import { Language, Translation } from './types'
 import { defaultLanguage } from './languages'
 
@@ -9,12 +9,17 @@ interface I18nContextType {
   isLoading: boolean
 }
 
-const I18nContext = createContext<I18nContextType | undefined>(undefined)
+// Export context for use in hooks file
+export const I18nContext = createContext<I18nContextType | undefined>(undefined)
 
 interface I18nProviderProps {
   children: ReactNode
 }
 
+/**
+ * Internationalization provider component
+ * Manages language state, loads translations, and provides context to child components
+ */
 export const I18nProvider: React.FC<I18nProviderProps> = ({ children }) => {
   const [language, setLanguageState] = useState<Language>(defaultLanguage)
   const [translations, setTranslations] = useState<Translation | null>(null)
@@ -47,6 +52,10 @@ export const I18nProvider: React.FC<I18nProviderProps> = ({ children }) => {
     }
   }, [])
 
+  /**
+   * Sets the current language and saves it to localStorage
+   * @param lang - The language to set
+   */
   const setLanguage = (lang: Language) => {
     setLanguageState(lang)
     localStorage.setItem('preferred-language', lang)
@@ -72,12 +81,4 @@ export const I18nProvider: React.FC<I18nProviderProps> = ({ children }) => {
       {children}
     </I18nContext.Provider>
   )
-}
-
-export const useTranslation = () => {
-  const context = useContext(I18nContext)
-  if (context === undefined) {
-    throw new Error('useTranslation must be used within an I18nProvider')
-  }
-  return context
 } 

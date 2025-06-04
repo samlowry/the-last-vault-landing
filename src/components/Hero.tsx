@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight, Heart, Clock, Users } from 'lucide-react'
-import { useTranslation } from '../i18n/context'
+import { useTranslation } from '../i18n'
 
 const Hero: React.FC = () => {
   const { t } = useTranslation()
@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
   }, [])
 
   return (
-    <section className="relative min-h-[70vh] md:min-h-screen flex items-start md:items-center justify-center pt-8 md:pt-16 overflow-hidden">
+    <section className="relative min-h-[70vh] md:min-h-screen flex items-start md:items-center justify-center pt-16 md:pt-16 overflow-hidden">
       {/* Background Animation */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -98,7 +98,7 @@ const Hero: React.FC = () => {
           {/* Badge */}
           <motion.div
             variants={itemVariants}
-            className="inline-flex items-center px-3 py-1.5 md:px-4 md:py-2 rounded-full glass-effect mb-4 md:mb-8 mt-6 md:mt-12"
+            className="inline-flex items-center px-3 py-1.5 md:px-4 md:py-2 rounded-full glass-effect mb-4 md:mb-8 mt-12 md:mt-12"
           >
             <span className="text-xs md:text-sm font-medium text-gray-300">
               {t.hero.badge}

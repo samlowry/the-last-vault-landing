@@ -64,6 +64,7 @@ export interface Translation {
     badge: string
     title: string
     subtitle: string
+    ageLabel: string
     items: Array<{
       name: string
       age: string

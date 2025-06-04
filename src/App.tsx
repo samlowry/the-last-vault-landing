@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { I18nProvider } from './i18n/context'
+import { I18nProvider } from './i18n'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Features from './components/Features'

@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Quote, ArrowRight } from 'lucide-react'
-import { useTranslation } from '../i18n/context'
+import { useTranslation } from '../i18n'
 
 const Stories: React.FC = () => {
   const { t } = useTranslation()
@@ -80,16 +80,16 @@ const Stories: React.FC = () => {
               <div className="mb-6">
                 <div className="flex items-center gap-4 mb-4">
                   <h3 className="text-xl font-semibold text-white">{story.name}</h3>
-                  <span className="text-sm text-gray-400">Age {story.age}</span>
+                  <span className="text-sm text-cyan-300 font-medium">{t.stories.ageLabel} {story.age}</span>
                 </div>
-                <p className="text-sm text-primary-300 mb-4">{story.relationship}</p>
+                <p className="text-sm text-primary-50 font-medium mb-4">{story.relationship}</p>
               </div>
 
               <p className="text-text-100 leading-relaxed mb-6 text-lg">
                 {story.story}
               </p>
 
-              <blockquote className="text-accent-400 font-medium text-lg italic border-l-2 border-accent-400/30 pl-4">
+              <blockquote className="text-amber-400 font-semibold text-lg italic border-l-2 border-amber-500/60 pl-4">
                 {story.quote}
               </blockquote>
             </motion.div>
@@ -110,7 +110,7 @@ const Stories: React.FC = () => {
               className="text-center glass-effect p-6 rounded-2xl"
               whileHover={{ scale: 1.05 }}
             >
-              <div className="text-3xl md:text-4xl font-bold text-accent-400 mb-2">
+              <div className="text-3xl md:text-4xl font-bold text-amber-400 mb-2">
                 {stat.number}
               </div>
               <p className="text-text-100">{stat.text}</p>

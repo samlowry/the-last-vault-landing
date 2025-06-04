@@ -11,7 +11,7 @@ import {
   Database,
   Cpu
 } from 'lucide-react'
-import { useTranslation } from '../i18n/context'
+import { useTranslation } from '../i18n'
 
 const Security: React.FC = () => {
   const { t } = useTranslation()

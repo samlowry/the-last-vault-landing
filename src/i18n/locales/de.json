@@ -60,9 +60,10 @@
     }
   },
   "stories": {
-    "badge": "Echte Geschichten von Verlust",
-    "title": "„Was ich dafür geben würde..."",
-    "subtitle": "Jeden Tag verlieren Menschen für immer die digitalen Spuren ihrer Liebsten. Das sind ihre Geschichten — und warum wir The Last Vault erschaffen.",
+    "badge": "Wahre Geschichten des Verlusts",
+    "title": "\"Was ich geben würde...\"",
+    "subtitle": "Jeden Tag verlieren Menschen für immer die digitalen Spuren ihrer Lieben. Das sind ihre Geschichten - und warum wir The Last Vault bauen.",
+    "ageLabel": "Alter",
     "items": [
       {
         "name": "Petra Müller",

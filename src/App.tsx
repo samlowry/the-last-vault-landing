@@ -5,7 +5,7 @@ import Hero from './components/Hero'
 import Features from './components/Features'
 import Stories from './components/Stories'
 import Security from './components/Security'
-import Waitlist from './components/Pricing'
+import Waitlist from './components/Waitlist'
 import Footer from './components/Footer'
 
 function App() {

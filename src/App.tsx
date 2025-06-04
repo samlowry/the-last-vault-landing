@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Features from './components/Features'
+import Stories from './components/Stories'
 import Security from './components/Security'
 import Waitlist from './components/Pricing'
 import Footer from './components/Footer'
@@ -14,6 +15,7 @@ function App() {
       <main>
         <Hero />
         <Features />
+        <Stories />
         <Security />
         <Waitlist />
       </main>
